@@ -107,5 +107,11 @@
 		else
 			msg += line
 
-	to_chat(src, "<b>Current Staff ([active_staff]/[total_staff]):</b>")
+	to_chat(src, "<b>Current Management ([active_staff]/[total_staff]):</b>")
+	to_chat(src, "<b>Current Devs ([active_staff]/[total_staff]):</b>")
+	to_chat(src, "<b>Current Admins ([active_staff]/[total_staff]):</b>")
+	to_chat(src, "<b>Current GMs ([active_staff]/[total_staff]):</b>")
+	to_chat(src, "<b>Current Moderators ([active_staff]/[total_staff]):</b>")
+	to_chat(src, "<b>Current Mentors ([active_staff]/[total_staff]):</b>")
+	to_chat(src, "<b>Current Retirees ([active_staff]/[total_staff]):</b>")
 	to_chat(src, jointext(msg,"\n"))
