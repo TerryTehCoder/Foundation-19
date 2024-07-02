@@ -221,14 +221,16 @@
 
 /decl/flooring/tiling/mono
 	icon_base = "monotile"
+	color = COLOR_GRAY40
 	build_type = /obj/item/stack/tile/mono
 
 /decl/flooring/tiling/mono/dark
-	icon_base = "monotiledark"
+	color = COLOR_DARK_GRAY
 	build_type = /obj/item/stack/tile/mono/dark
 
 /decl/flooring/tiling/mono/white
 	icon_base = "monotilewhite"
+	color = COLOR_OFF_WHITE
 	build_type = /obj/item/stack/tile/mono/white
 
 /decl/flooring/tiling/white

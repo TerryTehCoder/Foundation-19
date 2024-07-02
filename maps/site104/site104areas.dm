@@ -15,7 +15,8 @@
 /area/site104/surface/outside
 	name = "Open Air"
 	requires_power = 0
-	dynamic_lighting = 0
+	dynamic_lighting = 1
+	requires_power = 0
 
 /area/site104/engineering/reactor
 	name = "Reactor"
