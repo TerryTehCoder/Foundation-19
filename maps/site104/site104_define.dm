@@ -1,33 +1,33 @@
-/datum/map/site53
-	name = "Site 53"
-	full_name = "Foundation Site 53"
-	path = "site53"
+/datum/map/site104
+	name = "Site 104"
+	full_name = "Foundation Site 104"
+	path = "site104"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	station_levels = list(1,2,3,4)
 	contact_levels = list(1,2,3,4)
 	player_levels = list(1,2,3,4)
 	admin_levels = list(5,6,7)
 	empty_levels = list()
-	map_info = ""
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"4"=1)
 	base_turf_by_z = list(
-		"1" = /turf/simulated/floor/exoplanet/desert,
-		"2" = /turf/simulated/floor/exoplanet/desert,
-		"3" = /turf/simulated/floor/exoplanet/snow,
+		"1" = /turf/simulated/floor/beach/water/ocean,
+		"2" = /turf/simulated/floor/plating,
+		"3" = /turf/simulated/floor/plating,
+		"4" = /turf/simulated/floor/plating
 	)
 	overmap_size = 35
 	overmap_event_areas = 0
-	usable_email_tlds = list("site53.foundation", "security.site53.foundation", "science.site53.foundation", "utility.site53.foundation")
-	config_path = "config/site53_config.txt"
+	usable_email_tlds = list("site104.foundation", "security.site104.foundation", "science.site104.foundation", "utility.site104.foundation")
+	config_path = "config/site104_config.txt"
 
 	allowed_spawns = list("Cryogenic Storage", "D-Cells", "Light Containment Zone")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "Foundation Site 53"
-	station_short = "Site 53"
+	station_name  = "Foundation Site 104"
+	station_short = "Site 104"
 	dock_name     = "Central Command Depo"
-	boss_name     = "O5 Foundation Council"
-	boss_short    = "O5 Council"
+	boss_name     = "Foundation Marine Overwatch"
+	boss_short    = "Marine Overwatch"
 	company_name  = "SCP Foundation"
 	company_short = "Foundation"
 
@@ -41,13 +41,13 @@
 	)
 
 	//These should probably be moved into the evac controller...
-	shuttle_docked_message = "The outbound train is now boarding at the Train Station. It will depart in approximately %ETD%."
-	shuttle_leaving_dock = "The outbound train for off-duty personnel is now departing, and will reach its first stop in %ETA%."
-	shuttle_called_message = "The work shift is now ending. The next outbound train for off-duty personnel will begin boarding in %ETA%."
+	shuttle_docked_message = "The outbound ship is now boarding at the Ship-Depo. It will depart in approximately %ETD%."
+	shuttle_leaving_dock = "The outbound ship for off-duty personnel is now departing, and will reach its first stop in %ETA%."
+	shuttle_called_message = "The work shift is now ending. The next outbound ship for off-duty personnel will begin boarding in %ETA%."
 	shuttle_recall_message = "The work shift has been extended. Please return to your post."
-	emergency_shuttle_docked_message = "The emergency train is now boarding at the Train Station. Evacuation is mandatory for all Foundation personnel. It will depart in %ETD%."
-	emergency_shuttle_leaving_dock = "The emergency train is departing for Extraction Site 53-B and will arrive in %ETA%. Please cooperate with Responders upon arrival."
-	emergency_shuttle_called_message = "An emergency evacuation has been ordered for this facility. All authorized evacuees must proceed to the outbound Train Station within %ETA%."
+	emergency_shuttle_docked_message = "The emergency ship is now boarding at the Ship-Depo. Evacuation is mandatory for all Foundation personnel. It will depart in %ETD%."
+	emergency_shuttle_leaving_dock = "The emergency ship is departing for Extraction Site 24-A and will arrive in %ETA%. Please cooperate with Responders upon arrival."
+	emergency_shuttle_called_message = "An emergency evacuation has been ordered for this facility. All authorized evacuees must proceed to the outbound Ship Depo within %ETA%."
 	emergency_shuttle_recall_message = "The emergency evacuation has been cancelled. Return to your post."
 
 	evac_controller_type = /datum/evacuation_controller/shuttle //The evacuation controller that the map uses, this MUST be defined else the train will not function.
@@ -56,27 +56,8 @@
 	use_overmap = 0
 	num_exoplanets = 0
 	planet_size = list(129,129)
-	apc_test_exempt_areas = list(
-		/area/space = NO_APC,
-		/area/site53/llcz/mine/unexplored = NO_APC,
-		/area/site53/llcz/mine/explored = NO_APC,
-		/area/site53/surface = NO_APC,
-		/area/turbolift/site53/surface = NO_APC,
-		/area/turbolift/site53/basement = NO_APC,
-		/area/turbolift/site53/logistics = NO_APC,
-		/area/turbolift/site53/logisticstorage = NO_APC,
-		/area/turbolift/site53/scp106obs = NO_APC,
-		/area/turbolift/site53/scp106obs = NO_APC,
-		/area/turbolift/site53/uhcz = NO_APC,
-		/area/turbolift/site53/lhcz = NO_APC,
-		/area/site53/tram/scpcar = NO_APC,
-		/area/turbolift/site53/commstower = NO_APC,
-		/area/turbolift/site53/scp106cont = NO_APC,
-		/area/turbolift/site53/robotlwr = NO_APC,
-		/area/turbolift/site53/robotupr = NO_APC,
-		/area/turbolift/site53/gatea = NO_APC,
-		/area/turbolift/site53/hub = NO_APC,
-		/area/centcom/goc = NO_APC,
+	apc_test_exempt_areas = list( //Note to self, this needs to be updated to Site-104 locations (which do not currently exist).
+		/area/space = NO_APC
 	)
 
 	away_site_budget = 3
@@ -136,6 +117,13 @@
 		TAG_CULTURE =   CULTURE_HUMAN_EARTH,
 		TAG_RELIGION =  RELIGION_AGNOSTICISM
 	)
+
+/datum/map/site104/get_map_info()
+	. = list()
+	. +=  "You're aboard Site-104, a Foundation facility located off the coast of Northern Alaska using the frame of a decommisioned Oil Rig."
+	. +=  "While the facility isn't as large as Site-53, its tight corridors and external catwalks will keep you wondering what that noise you just heard was."
+	. +=  "This area of the region is largely unoccupied, with only the cold nip of the wind and the ocean waves to keep you company."
+	return jointext(., "<br>")
 
 /*
 /datum/map/torch/setup_map()
