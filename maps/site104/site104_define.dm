@@ -47,7 +47,7 @@
 	shuttle_recall_message = "The work shift has been extended. Please return to your post."
 	emergency_shuttle_docked_message = "The emergency ship is now boarding at the Ship-Depo. Evacuation is mandatory for all Foundation personnel. It will depart in %ETD%."
 	emergency_shuttle_leaving_dock = "The emergency ship is departing for Extraction Site 24-A and will arrive in %ETA%. Please cooperate with Responders upon arrival."
-	emergency_shuttle_called_message = "An emergency evacuation has been ordered for this facility. All authorized evacuees must proceed to the outbound Ship Depo within %ETA%."
+	emergency_shuttle_called_message = "An emergency evacuation has been ordered for this facility. All authorized evacuees must proceed to the outbound Ship-Depo within %ETA%."
 	emergency_shuttle_recall_message = "The emergency evacuation has been cancelled. Return to your post."
 
 	evac_controller_type = /datum/evacuation_controller/shuttle //The evacuation controller that the map uses, this MUST be defined else the train will not function.
