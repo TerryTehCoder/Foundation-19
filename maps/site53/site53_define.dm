@@ -8,7 +8,6 @@
 	player_levels = list(1,2,3,4)
 	admin_levels = list(5,6,7)
 	empty_levels = list()
-	map_info = ""
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"4"=1)
 	base_turf_by_z = list(
 		"1" = /turf/simulated/floor/exoplanet/desert,
