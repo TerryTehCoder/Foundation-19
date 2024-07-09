@@ -41,7 +41,7 @@
 
 /atom/movable/screen/new_player/title
 	name = "Lobby art"
-	icon = 'maps/site53/icons/lobby.dmi'
+	icon = 'maps/site104/icons/lobby.dmi' //I am suffering the downfall of the hubris from those before me who refused to move these files into non-map folders. (Update this later when not testing Site-104)
 	icon_state = "title_new"
 	screen_loc = "WEST,SOUTH"
 	var/lobby_index = 1

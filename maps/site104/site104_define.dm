@@ -11,9 +11,9 @@
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"4"=1)
 	base_turf_by_z = list(
 		"1" = /turf/simulated/floor/beach/water/ocean,
-		"2" = /turf/simulated/floor/plating,
-		"3" = /turf/simulated/floor/plating,
-		"4" = /turf/simulated/floor/plating
+		"2" = /turf/simulated/open,
+		"3" = /turf/simulated/open,
+		"4" = /turf/simulated/open
 	)
 	overmap_size = 35
 	overmap_event_areas = 0
@@ -62,7 +62,7 @@
 
 	away_site_budget = 3
 
-	id_hud_icons = 'maps/site53/icons/assignment_hud.dmi'
+	id_hud_icons = 'maps/site104/icons/assignment_hud.dmi'
 
 	lobby_tracks = list(
 		/decl/audio/track/dieinthedark,
