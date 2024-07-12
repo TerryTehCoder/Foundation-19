@@ -282,3 +282,30 @@
 
 /obj/structure/stairs/short/west
 	dir = WEST
+
+/// These stairs are used for fake depth. They don't go up z-levels. (Ported from Aurora)
+/obj/structure/platform_stairs
+	name = "stairs"
+	desc = "An archaic form of locomotion along the Z-axis."
+	density = FALSE
+	anchored = TRUE
+	icon = 'icons/obj/structures/stairs.dmi'
+	icon_state = "np_stair"
+
+/obj/structure/platform_stairs/south_north_solo
+	icon_state = "p_stair_sn_solo_cap"
+
+/obj/structure/platform_stairs/full
+	icon_state = "p_stair_full"
+
+/obj/structure/platform_stairs/full/east_west_cap
+	icon_state = "p_stair_ew_full_cap"
+
+/obj/structure/platform_stairs/full/east_west_cap/half
+	icon_state = "p_stair_ew_half_cap"
+
+/obj/structure/platform_stairs/full/south_north_cap
+	icon_state = "p_stair_sn_full_cap"
+
+/obj/structure/platform_stairs/full/south_north_cap/half
+	icon_state = "p_stair_sn_half_cap"
