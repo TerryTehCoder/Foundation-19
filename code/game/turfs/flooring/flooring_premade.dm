@@ -469,19 +469,25 @@
 
 //Animated water tiles, I mostly use these for Site-104
 
-/turf/simulated/floor/beach/water/ocean/west
+/turf/unsimulated/floor/beach/water/ocean //Ref
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "seadeep"
+
+/turf/unsimulated/floor/beach/water/ocean/west
 	icon_state = "seadeepwest"
 
-/turf/simulated/floor/beach/water/ocean/east
+/turf/unsimulated/floor/beach/water/ocean/east
 	icon_state = "seadeepeast"
 
-/turf/simulated/floor/beach/water/ocean/north
+/turf/unsimulated/floor/beach/water/ocean/north
 	icon_state = "seadeepnorth"
 
-/turf/simulated/floor/beach/water/ocean/south
+/turf/unsimulated/floor/beach/water/ocean/south
 	icon_state = "seadeepsouth"
 
-/turf/simulated/floor/beach/water/New()
+
+
+/turf/unsimulated/floor/beach/water/New()
 	..()
 	add_overlay(image("icon"='icons/misc/beach.dmi',"icon_state"="water5","layer"=MOB_LAYER+0.1))
 
