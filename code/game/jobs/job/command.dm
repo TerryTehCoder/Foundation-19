@@ -174,7 +174,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/civ/tribunal
 	requirements = list(EXP_TYPE_COMMAND = 600, EXP_TYPE_SECURITY = 600, EXP_TYPE_BUR = 60)
 	class = CLASS_A
-	hud_icon = "hud05rep"
+	hud_icon = "huditdo"
 	access = list(
 		ACCESS_ADMIN_LVL1,
 		ACCESS_ADMIN_LVL2,
@@ -217,7 +217,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/civ/ethics
 	requirements = list(EXP_TYPE_BUR = 300)
 	class = CLASS_A
-	hud_icon = "hud05rep"
+	hud_icon = "hudecl"
 	access = list(
 		ACCESS_ADMIN_LVL1,
 		ACCESS_ADMIN_LVL2,
@@ -257,8 +257,8 @@
 	minimal_player_age = 9
 	ideal_character_age = 30
 	alt_titles = list(
+		"Global Occult Coalition Ambassador",
 		"UIU Relations Agent" = /decl/hierarchy/outfit/job/civ/uiu,
-		"Horizon Initiative Scribe" = /decl/hierarchy/outfit/job/civ/thirep,
 		"Marshall, Carter, and Dark Corporate Liaison" = /decl/hierarchy/outfit/job/civ/MCDRep,
 		"Goldbaker-Reinz Corporate Liaison" = /decl/hierarchy/outfit/job/civ/grcl
 	)
