@@ -3,17 +3,22 @@
 	full_name = "Foundation Site 104"
 	path = "site104"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
-	station_levels = list(1,2,3,4)
-	contact_levels = list(1,2,3,4)
-	player_levels = list(1,2,3,4)
-	admin_levels = list(5,6,7)
+	station_levels = list(1,2,3,4,5,6,7)
+	contact_levels = list(1,2,3,4,5,6,7)
+	player_levels = list(1,2,3,4,5,6,7)
+	admin_levels = list(8,9,10)
 	empty_levels = list()
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"4"=1)
 	base_turf_by_z = list(
-		"1" = /turf/simulated/floor/beach/water/ocean,
-		"2" = /turf/simulated/open,
-		"3" = /turf/simulated/open,
-		"4" = /turf/simulated/open
+		"1" = /turf/unsimulated/floor/beach/water/ocean,
+		"2" = /turf/simulated/floor/exoplanet/desert,
+		"3" = /turf/simulated/floor/exoplanet/desert,
+		"4" = /turf/simulated/floor/exoplanet/desert,
+		"2" = /turf/simulated/floor/exoplanet/desert,
+		"3" = /turf/simulated/floor/exoplanet/desert,
+		"5" = /turf/simulated/floor/exoplanet/desert,
+		"6" = /turf/simulated/floor/exoplanet/desert,
+		"7" = /turf/simulated/floor/exoplanet/desert
 	)
 	overmap_size = 35
 	overmap_event_areas = 0

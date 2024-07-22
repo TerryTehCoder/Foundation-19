@@ -59,6 +59,15 @@
 	reagent_type = /datum/reagent/toxin/tar
 	dirt_color = "#3e3960"
 
+/turf/simulated/floor/exoplanet/water/shallow/oil
+	name = "Oil"
+	icon = 'icons/turf/shrouded.dmi'
+	icon_state = "shrouded_tar"
+	desc = "A pool of viscous and sticky oil. Better not light any flames..."
+	movement_delay = 12
+	reagent_type = /datum/reagent/oil
+	dirt_color = "#211e33"
+
 /turf/simulated/floor/exoplanet/water/shallow/tar/get_footstep_sound(mob/caller)
 	return get_footstep(/decl/footsteps/water, caller)
 

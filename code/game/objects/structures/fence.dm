@@ -129,7 +129,7 @@
 	visible_message(SPAN_NOTICE("\The [user] [density ? "opens" : "closes"] \the [src]."))
 	set_density(!density)
 	update_icon()
-	playsound(src, 'sounds/machines/click.ogg', 100, TRUE)
+	playsound(src, 'sounds/structures/fencedoortoggle.ogg', 100, TRUE)
 
 /obj/structure/fence/door/update_icon()
 	icon_state = density ? "door_closed" : "door_opened"

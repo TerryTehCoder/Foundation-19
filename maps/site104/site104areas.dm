@@ -18,6 +18,11 @@
 	dynamic_lighting = 1
 	requires_power = 0
 
+/area/site104/surface/opendeck
+	name = "Open Deck"
+	sound_env = HANGAR
+	forced_ambience = 'sounds/ambience/Site104/DeckAmbience.ogg'
+
 /area/site104/engineering/reactor
 	name = "R-UST Reactor"
 
