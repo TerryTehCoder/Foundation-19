@@ -72,7 +72,7 @@
 	id_tag = "FlareIgn"
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "acY" = (
 /obj/machinery/door/airlock/glass/research{
@@ -189,7 +189,7 @@
 "ami" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "amF" = (
 /obj/structure/table/steel,
@@ -212,7 +212,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/atmospherics)
 "aob" = (
 /obj/structure/table/rack/dark,
@@ -255,7 +255,7 @@
 	dir = 4;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/overflow)
 "apO" = (
 /obj/structure/railing/mapped,
@@ -264,7 +264,7 @@
 "aqc" = (
 /obj/structure/lattice,
 /obj/structure/window/reinforced,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "aqR" = (
 /obj/effect/catwalk_plated/dark,
@@ -373,7 +373,7 @@
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "azX" = (
 /obj/structure/table/standard,
@@ -581,14 +581,14 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "aMO" = (
 /obj/effect/catwalk_plated,
 /obj/structure/sign/warning/fall{
 	pixel_y = 32
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "aMR" = (
 /obj/structure/table/woodentable/ebony,
@@ -657,7 +657,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "aOf" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -736,7 +736,7 @@
 /area/space)
 "aQJ" = (
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "aRn" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -884,7 +884,7 @@
 /obj/item/toy/prize/deathripley,
 /obj/item/toy/figure/corgi,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "bbx" = (
 /obj/machinery/door/airlock/security{
@@ -1015,7 +1015,7 @@
 	pixel_y = 1;
 	use_power = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "bgR" = (
 /obj/effect/catwalk_plated/dark,
@@ -1070,7 +1070,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 5
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "bkJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -1134,7 +1134,7 @@
 	dir = 4
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "bpp" = (
 /obj/effect/floor_decal/spline/fancy/black{
@@ -1308,7 +1308,7 @@
 	pixel_y = 1;
 	use_power = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "bxH" = (
 /obj/effect/catwalk_plated/dark,
@@ -1316,7 +1316,7 @@
 /obj/item/crowbar/emergency_forcing_tool,
 /obj/item/crowbar/emergency_forcing_tool,
 /obj/item/device/flashlight/flare,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "byb" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -1332,7 +1332,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "byZ" = (
 /obj/machinery/atmospherics/pipe/cap/visible{
@@ -1649,7 +1649,7 @@
 /obj/random/trash,
 /obj/random/trash,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "bPH" = (
 /obj/structure/table/steel,
@@ -1693,7 +1693,7 @@
 	dir = 1
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "bRg" = (
 /obj/effect/catwalk_plated/dark,
@@ -1798,7 +1798,7 @@
 	dir = 10
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "bXz" = (
 /obj/structure/cable/yellow{
@@ -2197,7 +2197,7 @@
 /obj/machinery/atmospherics/pipe/zpipe/down/red{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "cwz" = (
 /obj/structure/railing/mapped{
@@ -2308,7 +2308,7 @@
 	pixel_x = -30;
 	desc = "(Warning! Roof access restricted to authorized personnel only!). Well it's a good thing you're authorized, right?"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "cDj" = (
 /turf/simulated/wall/titanium,
@@ -2550,19 +2550,11 @@
 /turf/simulated/floor/plating,
 /area/site104/surface/opendeck)
 "cUp" = (
+/obj/structure/closet/crate,
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/obj/structure/closet/crate,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
+/obj/item/cell/high,
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/powerbay)
 "cUr" = (
@@ -2572,7 +2564,7 @@
 	use_power = 1
 	},
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "cVc" = (
 /obj/machinery/door/airlock/research{
@@ -2641,9 +2633,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/site104/research/lab)
 "cXW" = (
-/obj/item/stool,
 /obj/effect/catwalk_plated/dark,
 /obj/effect/catwalk_plated/dark,
+/obj/structure/fence{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/site104/surface/opendeck)
 "cYi" = (
@@ -2711,7 +2705,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "dbf" = (
 /obj/effect/floor_decal/spline/plain/brown,
@@ -2770,12 +2764,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/dark,
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/reactor)
 "deP" = (
@@ -2907,7 +2895,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "dnA" = (
 /obj/structure/bed/chair{
@@ -2939,7 +2927,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "dpY" = (
 /obj/structure/catwalk,
@@ -3046,7 +3034,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "dvG" = (
 /obj/effect/floor_decal/spline/fancy/black{
@@ -3196,7 +3184,7 @@
 	dir = 4
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "dEc" = (
 /obj/structure/table/steel,
@@ -3223,7 +3211,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "dFj" = (
 /obj/effect/floor_decal/corner/black/full,
@@ -3306,7 +3294,7 @@
 "dJa" = (
 /obj/structure/catwalk,
 /obj/effect/floor_decal/corner/brown/full,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "dJf" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -3325,7 +3313,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "dJZ" = (
 /obj/structure/table/steel,
@@ -3501,7 +3489,7 @@
 /obj/effect/landmark/map_data{
 	height = 7
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "eaB" = (
 /obj/structure/cable{
@@ -3523,7 +3511,7 @@
 	icon_state = "32-1";
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "eaO" = (
 /obj/effect/catwalk_plated/dark,
@@ -3595,7 +3583,7 @@
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "eio" = (
 /obj/effect/catwalk_plated/dark,
@@ -3698,7 +3686,7 @@
 /obj/item/reagent_containers/food/snacks/slice/applecake,
 /obj/item/reagent_containers/food/snacks/slice/plaincake,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "emz" = (
 /obj/structure/disposalpipe/segment{
@@ -3795,7 +3783,7 @@
 /area/site104/engineering/hallway)
 "esr" = (
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "esu" = (
 /obj/effect/floor_decal/industrial/outline/red,
@@ -3806,7 +3794,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 5
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "eth" = (
 /obj/item/anobattery,
@@ -3827,7 +3815,7 @@
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "euk" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -3859,7 +3847,7 @@
 	icon_state = "16-0"
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "euP" = (
 /turf/simulated/floor/tiled/dark/small{
@@ -3931,7 +3919,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "exA" = (
 /obj/structure/window/reinforced{
@@ -3939,7 +3927,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/lattice,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "eyU" = (
 /obj/effect/floor_decal/spline/fancy/black,
@@ -4014,7 +4002,7 @@
 	dir = 9
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "eCk" = (
 /obj/structure/cable{
@@ -4044,7 +4032,7 @@
 /obj/structure/handrail{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "eEU" = (
 /obj/machinery/door/blast/regular{
@@ -4172,7 +4160,7 @@
 "eKG" = (
 /obj/effect/floor_decal/floordetail/edgedrain,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "eKK" = (
 /obj/effect/floor_decal/spline/plain/beige,
@@ -4347,7 +4335,7 @@
 	dir = 1
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "eRK" = (
 /obj/effect/catwalk_plated/dark,
@@ -4368,7 +4356,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "eTB" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -4390,7 +4378,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "eVy" = (
 /obj/machinery/door/airlock/research{
@@ -4474,7 +4462,7 @@
 /area/site104/research/srofficea)
 "fbH" = (
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fbJ" = (
 /obj/machinery/door/airlock/hatch/maintenance{
@@ -4486,7 +4474,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 6
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fcZ" = (
 /obj/effect/floor_decal/corner/paleblue{
@@ -4514,7 +4502,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fev" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -4649,7 +4637,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "fmU" = (
 /obj/effect/catwalk_plated/dark,
@@ -4687,7 +4675,7 @@
 /area/site104/engineering/hallway)
 "foN" = (
 /obj/structure/stairs/east,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "foR" = (
 /obj/machinery/door/airlock/external{
@@ -4705,7 +4693,7 @@
 /area/space)
 "fpg" = (
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fpK" = (
 /obj/structure/window/reinforced{
@@ -4738,7 +4726,7 @@
 "fse" = (
 /obj/structure/catwalk,
 /obj/machinery/light,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "fso" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -4853,7 +4841,7 @@
 	name = "Main Drill";
 	machine_desc = "An industrial drill, used to crack through dirt and rock to harvest minerals beneath the surface of the ocean. Requires two adjacent braces to operate. This one looks much more complex than a standard issue mining drill."
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fzS" = (
 /obj/effect/floor_decal/spline/fancy/black{
@@ -4944,7 +4932,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fFV" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -4970,7 +4958,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fHG" = (
 /obj/effect/floor_decal/corner/orange{
@@ -5047,6 +5035,17 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
+"fLJ" = (
+/obj/structure/closet/crate,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/turf/simulated/floor/tiled/dark/small,
+/area/site104/engineering/powerbay)
 "fLN" = (
 /turf/simulated/floor/reinforced/phoron/fuel,
 /area/site104/engineering/atmospherics)
@@ -5058,14 +5057,14 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "fMR" = (
 /obj/structure/stairs/south,
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fMX" = (
 /obj/effect/floor_decal/spline/fancy/black{
@@ -5123,7 +5122,7 @@
 "fOG" = (
 /obj/effect/catwalk_plated/dark,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fOW" = (
 /obj/machinery/door/airlock/mining{
@@ -5171,7 +5170,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "fVk" = (
 /obj/structure/backup_server,
@@ -5205,7 +5204,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "fWt" = (
 /obj/effect/floor_decal/spline/fancy/black,
@@ -5262,7 +5261,7 @@
 /turf/simulated/floor/plating,
 /area/site104/maintenance/northrigstarboard)
 "gfy" = (
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ggj" = (
 /obj/effect/catwalk_plated/dark,
@@ -5327,7 +5326,7 @@
 	dir = 4
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "gke" = (
 /obj/machinery/button/blast_door{
@@ -5415,7 +5414,7 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "goz" = (
 /turf/simulated/floor/tiled/dark/small,
@@ -5435,7 +5434,7 @@
 /area/space)
 "gqo" = (
 /obj/machinery/light,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/overflow)
 "gqA" = (
 /obj/structure/railing/mapped{
@@ -5458,7 +5457,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "grh" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -5492,7 +5491,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "gsn" = (
 /obj/effect/catwalk_plated/dark,
@@ -5543,6 +5542,21 @@
 	},
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/space)
+"gsZ" = (
+/obj/structure/railing/mapped{
+	dir = 8
+	},
+/obj/structure/closet/crate,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/turf/simulated/floor/tiled/dark/small,
+/area/site104/engineering/powerbay)
 "guR" = (
 /turf/simulated/floor/plating,
 /area/site104/engineering/powerbay)
@@ -5557,7 +5571,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "gvs" = (
 /obj/structure/cable/cyan{
@@ -5702,7 +5716,7 @@
 /area/space)
 "gDK" = (
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/overflow)
 "gDN" = (
 /obj/machinery/papershredder,
@@ -5803,14 +5817,14 @@
 /obj/machinery/atmospherics/binary/pump{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "gLn" = (
 /obj/structure/sign/warning/server_room{
 	dir = 1;
 	pixel_y = -32
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "gMY" = (
 /obj/effect/floor_decal/spline/fancy/black{
@@ -6004,7 +6018,7 @@
 /obj/item/paper{
 	contents = "Hey, to whoever gets the next assignment on this piece of crap, sometimes the flare igniters act up. If you can't ignite it from Marine Control you'll have to manually light it with a welder or a flare, whatever you can find. Don't let the eject run for too long without burning or you run the risk of the entire Flare getting torn apart!"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "gWL" = (
 /obj/effect/catwalk_plated,
@@ -6118,12 +6132,12 @@
 	dir = 1;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "hhe" = (
 /obj/effect/catwalk_plated,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "hij" = (
 /obj/machinery/artifact_harvester,
@@ -6230,7 +6244,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "hoe" = (
 /obj/structure/table/steel_reinforced,
@@ -6275,7 +6289,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "hqg" = (
 /obj/machinery/papershredder,
@@ -6308,7 +6322,7 @@
 	dir = 4;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "hsh" = (
 /obj/item/modular_computer/console/preset/supply_public,
@@ -6385,13 +6399,8 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/space)
 "hvw" = (
-/obj/effect/catwalk_plated/dark,
-/obj/structure/railing/mapped{
-	dir = 4
-	},
-/obj/structure/railing/mapped,
-/turf/simulated/floor/plating,
-/area/site104/surface/opendeck)
+/turf/simulated/floor/exoplanet/snow,
+/area/space)
 "hvQ" = (
 /obj/machinery/light{
 	dir = 8;
@@ -6426,7 +6435,7 @@
 /obj/machinery/door/airlock/engineering{
 	name = "Flare"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "hzD" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -6557,7 +6566,7 @@
 /area/space)
 "hIk" = (
 /obj/structure/lattice,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "hIF" = (
 /obj/machinery/mining/drill{
@@ -6565,7 +6574,7 @@
 	name = "Main Drill";
 	machine_desc = "An industrial drill, used to crack through dirt and rock to harvest minerals beneath the surface of the ocean. Requires two adjacent braces to operate. This one looks much more complex than a standard issue mining drill."
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "hJg" = (
 /obj/effect/catwalk_plated,
@@ -6649,12 +6658,12 @@
 /obj/effect/landmark/map_data{
 	height = 5
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "hLX" = (
 /obj/effect/catwalk_plated,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "hMn" = (
 /obj/effect/catwalk_plated/dark,
@@ -6724,7 +6733,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 9
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "hQY" = (
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -6736,7 +6745,7 @@
 /area/space)
 "hRH" = (
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/atmospherics)
 "hRQ" = (
 /obj/effect/catwalk_plated/dark,
@@ -6768,7 +6777,7 @@
 /obj/structure/platform_stairs{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "hTd" = (
 /obj/machinery/light{
@@ -6822,7 +6831,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "hUK" = (
 /obj/structure/railing/mapped{
@@ -6833,7 +6842,7 @@
 "hUZ" = (
 /obj/machinery/mining/brace,
 /obj/effect/catwalk_plated,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "hVx" = (
 /obj/structure/bed/chair{
@@ -6902,7 +6911,7 @@
 /area/site104/research/lab)
 "iax" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iaX" = (
 /obj/structure/table/steel_reinforced{
@@ -6933,7 +6942,7 @@
 "icb" = (
 /obj/structure/catwalk,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ice" = (
 /obj/effect/catwalk_plated/dark,
@@ -6944,7 +6953,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 10
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ieF" = (
 /obj/structure/table/rack/dark,
@@ -7088,7 +7097,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/lattice,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ipe" = (
 /obj/machinery/seed_storage/xenobotany,
@@ -7171,7 +7180,7 @@
 "irn" = (
 /obj/effect/paint_stripe/white,
 /obj/effect/paint_stripe/orange,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iru" = (
 /obj/effect/catwalk_plated/dark,
@@ -7217,7 +7226,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "itW" = (
 /obj/effect/catwalk_plated/dark,
@@ -7225,7 +7234,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iuT" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
@@ -7324,7 +7333,7 @@
 	dir = 8
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "iCZ" = (
 /obj/effect/catwalk_plated,
@@ -7367,13 +7376,13 @@
 	use_power = 1
 	},
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iGl" = (
 /obj/structure/closet/crate,
 /obj/random/loot,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iGA" = (
 /obj/effect/floor_decal/spline/fancy/black{
@@ -7512,12 +7521,12 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iKG" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black,
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iKK" = (
 /obj/effect/floor_decal/floordetail,
@@ -7577,7 +7586,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iMF" = (
 /obj/structure/cable/cyan{
@@ -7772,7 +7781,7 @@
 	dir = 4;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "iVI" = (
 /obj/effect/catwalk_plated/dark,
@@ -7801,6 +7810,11 @@
 	req_access = list("ACCESS_ENGINEERING_LEVEL2")
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/reactor)
 "iXi" = (
@@ -7892,7 +7906,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "jbf" = (
 /obj/structure/railing/mapped{
@@ -8070,7 +8084,7 @@
 	dir = 1;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "joG" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -8114,7 +8128,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "jtz" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -8148,7 +8162,7 @@
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "juV" = (
 /obj/effect/catwalk_plated/dark,
@@ -8208,7 +8222,7 @@
 /obj/item/flame/candle,
 /obj/item/material/kitchen/utensil/fork,
 /obj/item/material/kitchen/utensil/fork,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "jxQ" = (
 /obj/structure/bed/chair,
@@ -8255,7 +8269,7 @@
 /obj/item/reagent_containers/food/snacks/fishburger{
 	desc = "Burger?"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "jBR" = (
 /obj/structure/table/plastic,
@@ -8373,7 +8387,7 @@
 	dir = 9
 	},
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "jKm" = (
 /obj/structure/table/steel_reinforced,
@@ -8533,7 +8547,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "jRY" = (
 /obj/structure/railing/mapped{
@@ -8580,7 +8594,7 @@
 /obj/machinery/atmospherics/pipe/zpipe{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "jVi" = (
 /obj/structure/table/steel,
@@ -8691,7 +8705,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "kbX" = (
 /obj/structure/table/rack/dark,
@@ -8785,7 +8799,7 @@
 	dir = 8
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "kgB" = (
 /obj/structure/catwalk,
@@ -8793,7 +8807,7 @@
 	dir = 4
 	},
 /obj/structure/handrail,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "khE" = (
 /obj/machinery/conveyor{
@@ -8838,7 +8852,7 @@
 /area/site104/research/psionicsoffice)
 "kjI" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "kmP" = (
 /obj/effect/floor_decal/corner/brown{
@@ -8883,7 +8897,7 @@
 	dir = 4
 	},
 /obj/structure/table/steel,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "kof" = (
 /obj/item/storage/pill_bottle/amnesticsa,
@@ -9078,7 +9092,7 @@
 	dir = 1
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "kAN" = (
 /obj/structure/table/rack/dark,
@@ -9183,7 +9197,7 @@
 /turf/simulated/floor/tiled/dark/small,
 /area/space)
 "kFN" = (
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "kFS" = (
 /obj/structure/ladder/up,
@@ -9694,7 +9708,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lhL" = (
 /obj/structure/railing/mapped{
@@ -9739,7 +9753,7 @@
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ljZ" = (
 /obj/effect/floor_decal/corner/black/full,
@@ -9776,7 +9790,7 @@
 	dir = 8
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "llD" = (
 /obj/structure/window/reinforced,
@@ -9987,7 +10001,7 @@
 	dir = 1;
 	c_tag = "Tension Leg A"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lvM" = (
 /obj/machinery/conveyor_switch{
@@ -10097,7 +10111,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 6
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "lzK" = (
 /obj/machinery/computer/rdconsole/robotics{
@@ -10172,7 +10186,7 @@
 "lHC" = (
 /obj/effect/catwalk_plated/dark,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lHG" = (
 /obj/effect/floor_decal/industrial/outline/red,
@@ -10252,7 +10266,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lPf" = (
 /obj/effect/floor_decal/spline/fancy/black,
@@ -10283,6 +10297,16 @@
 /obj/structure/coatrack,
 /turf/simulated/floor/tiled/dark,
 /area/site104/research/assistantrd)
+"lQF" = (
+/obj/effect/catwalk_plated/dark{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/structure/fence/door{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/site104/surface/opendeck)
 "lQR" = (
 /obj/structure/bed/chair/comfy,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -10307,7 +10331,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lRz" = (
 /turf/simulated/floor/tiled/techfloor,
@@ -10347,14 +10371,14 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 10
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lWD" = (
 /obj/structure/catwalk{
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lXk" = (
 /obj/effect/catwalk_plated/dark,
@@ -10369,7 +10393,7 @@
 "lXL" = (
 /obj/machinery/floodlight,
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "lYa" = (
 /obj/structure/table/steel,
@@ -10396,7 +10420,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "man" = (
 /obj/effect/floor_decal/industrial/outline/orange,
@@ -10504,7 +10528,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "mfD" = (
 /obj/machinery/artifact_harvester,
@@ -10567,6 +10591,20 @@
 	},
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/atmospherics)
+"mje" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/dark,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/dark/small,
+/area/site104/engineering/reactor)
 "mjl" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -10587,7 +10625,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "mke" = (
 /obj/structure/table/steel,
@@ -10685,7 +10723,7 @@
 /area/space)
 "moJ" = (
 /obj/effect/catwalk_plated,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "moQ" = (
 /obj/structure/catwalk,
@@ -10780,7 +10818,7 @@
 /area/space)
 "mqV" = (
 /obj/structure/ladder/up,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "mrp" = (
 /obj/effect/catwalk_plated,
@@ -10946,7 +10984,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "mIe" = (
 /obj/effect/floor_decal/corner/paleblue{
@@ -11032,7 +11070,7 @@
 /obj/item/device/flashlight/flare,
 /obj/structure/closet,
 /obj/item/device/flashlight/flare,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "mNL" = (
 /obj/structure/cable/yellow{
@@ -11069,7 +11107,7 @@
 /area/site104/logistics/coldroom)
 "mPH" = (
 /obj/structure/lattice,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/atmospherics)
 "mQr" = (
 /turf/simulated/wall/iron,
@@ -11093,7 +11131,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "mRq" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -11182,7 +11220,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "mVL" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -11296,7 +11334,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "naw" = (
 /obj/machinery/computer/fusion/gyrotron{
@@ -11518,7 +11556,7 @@
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "nol" = (
 /obj/structure/bed/chair/office{
@@ -11686,7 +11724,7 @@
 "nxm" = (
 /obj/effect/catwalk_plated/dark,
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "nze" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -11696,7 +11734,7 @@
 /turf/simulated/floor/tiled/dark/small,
 /area/space)
 "nzw" = (
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/northrig/hallway)
 "nzG" = (
 /obj/machinery/atmospherics/pipe/cap/visible{
@@ -11959,7 +11997,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "nVb" = (
 /obj/effect/floor_decal/carpet/blue2{
@@ -12023,7 +12061,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "oaQ" = (
 /obj/effect/floor_decal/spline/plain/brown,
@@ -12068,7 +12106,7 @@
 	},
 /obj/structure/railing/mapped,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ofh" = (
 /obj/structure/cable{
@@ -12199,7 +12237,7 @@
 	dir = 4
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "omD" = (
 /obj/effect/floor_decal/corner/grey{
@@ -12236,19 +12274,15 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "oov" = (
 /obj/structure/closet/crate,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/powerbay)
 "ooI" = (
@@ -12311,7 +12345,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 10
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "orw" = (
 /obj/structure/cable/yellow{
@@ -12350,7 +12384,7 @@
 	name = "Reactor Vent";
 	id_tag = "ReactorVent"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "otw" = (
 /obj/structure/table/steel,
@@ -12421,7 +12455,7 @@
 /turf/simulated/floor/tiled/monofloor,
 /area/space)
 "owI" = (
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/overflow)
 "owQ" = (
 /obj/structure/fence{
@@ -12714,7 +12748,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "oOO" = (
 /turf/simulated/floor/carpet/purple,
@@ -12723,7 +12757,7 @@
 /obj/effect/landmark/map_data{
 	height = 3
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "oPD" = (
 /obj/structure/catwalk,
@@ -12738,7 +12772,7 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "oPZ" = (
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -12776,7 +12810,7 @@
 	dir = 4;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "oRQ" = (
 /obj/effect/catwalk_plated/dark,
@@ -13001,7 +13035,7 @@
 /obj/structure/closet,
 /obj/item/device/flashlight/flare/glowstick,
 /obj/item/device/flashlight/flare,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "pfc" = (
 /obj/structure/window/reinforced{
@@ -13048,7 +13082,7 @@
 /area/space)
 "phb" = (
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "phD" = (
 /obj/machinery/door/airlock/maintenance{
@@ -13238,7 +13272,7 @@
 	dir = 8;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "psE" = (
 /obj/structure/closet/secure_closet{
@@ -13453,7 +13487,7 @@
 /obj/effect/landmark/map_data{
 	height = 6
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "pGY" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -13513,7 +13547,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "pLL" = (
 /obj/machinery/door/airlock/external{
@@ -13615,7 +13649,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "pPO" = (
 /obj/structure/window/reinforced{
@@ -13626,12 +13660,12 @@
 /obj/machinery/atmospherics/pipe/zpipe/down{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "pPR" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "pQh" = (
 /obj/structure/bed/chair{
@@ -13925,7 +13959,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "qjr" = (
 /obj/structure/closet/crate,
@@ -14053,7 +14087,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "qqw" = (
 /obj/structure/cable{
@@ -14068,7 +14102,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "qre" = (
 /obj/structure/railing/mapped,
@@ -14101,7 +14135,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "qtj" = (
 /obj/machinery/power/smes/buildable/preset/ds90/substation_full,
@@ -14159,7 +14193,7 @@
 	dir = 1
 	},
 /obj/effect/catwalk_plated,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "qxn" = (
 /obj/structure/railing/mapped{
@@ -14178,7 +14212,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "qxJ" = (
 /obj/effect/floor_decal/industrial/outline/red,
@@ -14188,7 +14222,7 @@
 "qxR" = (
 /obj/machinery/door/airlock/engineering,
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "qyf" = (
 /obj/effect/catwalk_plated/dark,
@@ -14308,7 +14342,7 @@
 /obj/effect/landmark/map_data{
 	height = 2
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "qEf" = (
 /obj/structure/table/steel,
@@ -14355,7 +14389,7 @@
 	dir = 4
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "qII" = (
 /obj/structure/railing/mapped{
@@ -14763,7 +14797,7 @@
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rhw" = (
 /obj/effect/catwalk_plated/dark,
@@ -14776,7 +14810,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rhV" = (
 /obj/structure/railing/mapped,
@@ -14814,7 +14848,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rla" = (
 /obj/machinery/conveyor{
@@ -15124,7 +15158,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rEl" = (
 /obj/effect/floor_decal/corner/purple{
@@ -15156,7 +15190,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 5
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rGf" = (
 /obj/effect/catwalk_plated/dark,
@@ -15269,12 +15303,12 @@
 	icon_state = "16-0";
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rPF" = (
 /obj/effect/catwalk_plated,
 /obj/structure/ladder/up,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rPG" = (
 /turf/simulated/wall/iron,
@@ -15398,7 +15432,7 @@
 "rWs" = (
 /obj/structure/ladder/up,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "rXE" = (
 /obj/effect/floor_decal/spline/plain/black{
@@ -15504,7 +15538,7 @@
 	dir = 1;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/overflow)
 "sfa" = (
 /obj/effect/floor_decal/industrial/outline/blue,
@@ -15516,7 +15550,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "sfS" = (
 /obj/machinery/door/airlock/glass/engineering{
@@ -15537,7 +15571,7 @@
 "shi" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/black,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "shN" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
@@ -15605,7 +15639,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "slr" = (
 /obj/structure/table/steel_reinforced,
@@ -15692,7 +15726,7 @@
 /obj/machinery/door/airlock/hatch/maintenance{
 	req_access = list("ACCESS_ENGINEERING_LEVEL2")
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "srM" = (
 /obj/machinery/door/airlock/external{
@@ -15763,7 +15797,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "suj" = (
 /obj/effect/floor_decal/spline/plain/black{
@@ -15940,7 +15974,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "sEl" = (
 /obj/machinery/door/blast/shutters{
@@ -15981,7 +16015,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "sJe" = (
 /obj/structure/closet/emcloset,
@@ -16037,7 +16071,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "sMi" = (
 /obj/structure/bed/chair{
@@ -16173,7 +16207,7 @@
 	pixel_x = 27
 	},
 /obj/structure/catwalk,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "sSy" = (
 /obj/structure/railing/mapped{
@@ -16223,7 +16257,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "sXb" = (
 /obj/structure/extinguisher_cabinet{
@@ -16239,7 +16273,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 6
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "sXl" = (
 /obj/structure/closet,
@@ -16261,7 +16295,7 @@
 "sXR" = (
 /obj/structure/railing/mapped,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "sXW" = (
 /obj/machinery/door/airlock/glass/engineering{
@@ -16271,6 +16305,20 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/workshop)
+"sYl" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/dark,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/dark/small,
+/area/site104/engineering/powerbay)
 "sYD" = (
 /obj/machinery/artifact_analyser{
 	dir = 1
@@ -16325,11 +16373,15 @@
 	},
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/securestorage)
+"teR" = (
+/obj/effect/shuttle_landmark/goc_heli/out,
+/turf/simulated/floor/exoplanet/snow,
+/area/space)
 "tfi" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 9
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "tfp" = (
 /obj/structure/handrail{
@@ -16346,7 +16398,7 @@
 "tgr" = (
 /obj/structure/closet/crate,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "tgG" = (
 /obj/structure/window/reinforced{
@@ -16391,7 +16443,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "tjH" = (
 /obj/structure/railing/mapped{
@@ -16472,7 +16524,7 @@
 /obj/machinery/light{
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "tpf" = (
 /obj/effect/floor_decal/industrial/outline,
@@ -16809,7 +16861,7 @@
 	dir = 4
 	},
 /obj/structure/table/steel,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "tHh" = (
 /obj/effect/floor_decal/spline/plain/black{
@@ -16952,7 +17004,7 @@
 	dir = 8
 	},
 /obj/structure/closet/firecloset,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "tVH" = (
 /obj/structure/table/steel_reinforced,
@@ -17113,7 +17165,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ucj" = (
 /obj/structure/table/steel,
@@ -17166,7 +17218,7 @@
 	dir = 4
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ueA" = (
 /obj/effect/catwalk_plated/dark,
@@ -17233,7 +17285,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/red,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ugT" = (
 /obj/structure/catwalk,
@@ -17315,7 +17367,7 @@
 	dir = 8
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "ukh" = (
 /obj/machinery/atmospherics/omni/filter{
@@ -17387,7 +17439,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "upC" = (
 /obj/effect/catwalk_plated/dark,
@@ -17428,7 +17480,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "uqJ" = (
 /obj/machinery/telecomms/server/presets/command,
@@ -17447,7 +17499,7 @@
 	dir = 4
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "urf" = (
 /obj/effect/catwalk_plated/dark,
@@ -17455,7 +17507,7 @@
 	dir = 1;
 	id_tag = "MCLights"
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "usv" = (
 /obj/structure/railing/mapped{
@@ -17569,11 +17621,11 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "uzM" = (
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "uAz" = (
 /obj/effect/catwalk_plated/dark,
@@ -17798,7 +17850,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "uNe" = (
 /obj/structure/table/woodentable/ebony,
@@ -17984,7 +18036,7 @@
 /turf/simulated/floor/exoplanet/water/shallow/oil,
 /area/space)
 "uXy" = (
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/atmospherics)
 "uXC" = (
 /obj/effect/catwalk_plated/dark,
@@ -18094,7 +18146,7 @@
 	dir = 1
 	},
 /obj/structure/closet/emcloset,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "vcI" = (
 /obj/structure/table/steel,
@@ -18207,7 +18259,7 @@
 "vhM" = (
 /obj/effect/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/visible/black,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "vig" = (
 /turf/simulated/wall/iron,
@@ -18338,7 +18390,7 @@
 	dir = 8
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "vok" = (
 /obj/structure/catwalk,
@@ -18403,12 +18455,12 @@
 "vsg" = (
 /obj/structure/table/steel,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "vsZ" = (
 /obj/structure/catwalk,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/atmospherics)
 "vtf" = (
 /obj/machinery/door/blast/regular{
@@ -18678,7 +18730,7 @@
 "vMQ" = (
 /obj/effect/catwalk_plated/dark,
 /obj/structure/ladder/up,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "vNr" = (
 /obj/structure/cable{
@@ -18765,7 +18817,7 @@
 /obj/structure/platform_stairs{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "vRN" = (
 /obj/machinery/door/airlock/glass/civilian{
@@ -18889,7 +18941,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "vXp" = (
 /obj/effect/floor_decal/industrial/hatch/red,
@@ -19088,6 +19140,20 @@
 	},
 /turf/simulated/floor/plating,
 /area/site104/engineering/reactor)
+"wdF" = (
+/obj/structure/closet/crate,
+/obj/structure/railing/mapped{
+	dir = 4
+	},
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/turf/simulated/floor/tiled/dark/small,
+/area/site104/engineering/powerbay)
 "wee" = (
 /obj/structure/table/rack/dark,
 /obj/item/inflatable/door,
@@ -19156,7 +19222,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "whx" = (
 /obj/structure/table/steel,
@@ -19201,7 +19267,7 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/atmospherics)
 "wkN" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -19215,7 +19281,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "wkX" = (
 /obj/structure/ladder,
@@ -19311,7 +19377,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "wpX" = (
 /obj/effect/catwalk_plated,
@@ -19495,7 +19561,7 @@
 /obj/effect/landmark/map_data{
 	height = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "wyf" = (
 /obj/structure/handrail{
@@ -19695,7 +19761,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "wMm" = (
 /obj/structure/window/reinforced,
@@ -19794,7 +19860,7 @@
 	dir = 4
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "wTG" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -19815,7 +19881,7 @@
 	dir = 1
 	},
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "wTV" = (
 /obj/effect/catwalk_plated/dark,
@@ -19852,7 +19918,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "wUW" = (
 /obj/effect/floor_decal/corner/black/full,
@@ -19915,7 +19981,7 @@
 "wXZ" = (
 /obj/structure/ladder,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "wYw" = (
 /obj/structure/table/steel,
@@ -19997,14 +20063,14 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/overflow)
 "xeO" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/engineering/reactor)
 "xge" = (
 /obj/machinery/portable_atmospherics/canister/phoron,
@@ -20023,18 +20089,13 @@
 /turf/simulated/floor/plating,
 /area/site104/surface/opendeck)
 "xhU" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 6
 	},
 /obj/structure/cable{
 	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /obj/effect/catwalk_plated/dark,
 /turf/simulated/floor/tiled/dark/small,
@@ -20072,7 +20133,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xlS" = (
 /obj/structure/table/rack/dark,
@@ -20095,7 +20156,7 @@
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/structure/railing/mapped,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xnF" = (
 /obj/effect/catwalk_plated/dark,
@@ -20113,15 +20174,13 @@
 	dir = 8
 	},
 /obj/structure/closet/crate,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/high,
 /turf/simulated/floor/tiled/dark/small,
 /area/site104/engineering/powerbay)
 "xoI" = (
@@ -20146,7 +20205,7 @@
 /obj/structure/closet/crate,
 /obj/effect/catwalk_plated/dark,
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xpK" = (
 /obj/item/modular_computer/console/preset/civilian,
@@ -20191,7 +20250,7 @@
 	icon_state = "1-8";
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xrX" = (
 /obj/item/anobattery,
@@ -20302,7 +20361,7 @@
 "xyg" = (
 /obj/structure/ladder/updown,
 /obj/effect/catwalk_plated,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xzj" = (
 /obj/effect/floor_decal/spline/fancy/black{
@@ -20326,7 +20385,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "xBf" = (
 /obj/structure/cable{
@@ -20392,7 +20451,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "xCV" = (
 /obj/machinery/portable_atmospherics/hydroponics,
@@ -20408,7 +20467,7 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xDn" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -20428,7 +20487,7 @@
 "xEY" = (
 /obj/effect/catwalk_plated,
 /obj/effect/catwalk_plated,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xFk" = (
 /obj/structure/railing/mapped{
@@ -20607,7 +20666,7 @@
 	icon_state = "4-8";
 	dir = 1
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xOL" = (
 /obj/structure/table/steel_reinforced,
@@ -20624,7 +20683,6 @@
 /obj/machinery/disposal/deliveryChute{
 	dir = 1
 	},
-/obj/effect/decal/warning_stripes,
 /turf/simulated/floor/plating,
 /area/space)
 "xRM" = (
@@ -20707,11 +20765,11 @@
 /obj/structure/sign/directions/supply{
 	pixel_y = 32
 	},
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xUL" = (
 /obj/effect/catwalk_plated,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/space)
 "xVx" = (
 /obj/effect/landmark{
@@ -20908,7 +20966,7 @@
 /area/site104/logistics/cargoelevator)
 "yfK" = (
 /obj/effect/catwalk_plated/dark,
-/turf/simulated/open/noatmos,
+/turf/unsimulated/open,
 /area/site104/surface/opendeck)
 "ygs" = (
 /obj/structure/railing/mapped{
@@ -59936,7 +59994,7 @@ slM
 uLx
 gzO
 wmK
-wmK
+mje
 ddG
 wmK
 wmK
@@ -60109,8 +60167,8 @@ slM
 slM
 slM
 iXd
-gPe
 slM
+gPe
 slM
 slM
 slM
@@ -60280,9 +60338,9 @@ yaD
 aLu
 aLu
 tWK
-aLu
+sYl
 xhU
-jaO
+tso
 tso
 tso
 jaO
@@ -60802,7 +60860,7 @@ nbc
 nbc
 dsI
 xoF
-xoF
+gsZ
 oKi
 ujA
 rph
@@ -60974,7 +61032,7 @@ oKm
 oKm
 dsI
 oov
-oov
+fLJ
 kVg
 ujC
 koz
@@ -61318,7 +61376,7 @@ xxy
 xxy
 dsI
 cUp
-cUp
+wdF
 gsn
 veu
 mqI
@@ -91803,7 +91861,7 @@ nGk
 nGk
 vig
 vig
-wta
+vig
 xoZ
 xoZ
 xoZ
@@ -91975,7 +92033,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -92147,7 +92205,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -92319,7 +92377,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -92475,7 +92533,11 @@ juV
 xoZ
 xoZ
 xoZ
-lwg
+lQF
+xoZ
+xoZ
+xoZ
+neb
 xoZ
 xoZ
 xoZ
@@ -92487,11 +92549,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-xoZ
-xoZ
-xoZ
-xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -92663,7 +92721,7 @@ tFS
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 pch
 lwg
@@ -92823,6 +92881,7 @@ hAp
 nBa
 xoZ
 nBa
+hAp
 xoZ
 xoZ
 xoZ
@@ -92834,8 +92893,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -93007,7 +93065,7 @@ xoZ
 xoZ
 kXi
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -93179,7 +93237,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-xoZ
+neb
 xoZ
 xoZ
 xoZ
@@ -93351,7 +93409,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-xoZ
+neb
 xoZ
 xoZ
 nwV
@@ -93384,16 +93442,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+lum
+lum
+lum
+lum
+lum
+lum
+lum
+lum
+lum
 gfy
 gfy
 "}
@@ -93511,7 +93569,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-xoZ
+hAp
 geP
 geP
 xoZ
@@ -93523,7 +93581,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -93556,16 +93614,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -93695,7 +93753,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -93728,16 +93786,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -93855,7 +93913,7 @@ xoZ
 xoZ
 juV
 iVI
-iVI
+cXW
 jBR
 jBR
 xoZ
@@ -93867,7 +93925,7 @@ xoZ
 dag
 xoZ
 dag
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -93900,16 +93958,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -94027,7 +94085,7 @@ wta
 wta
 juV
 xoZ
-wta
+hAp
 geP
 geP
 xoZ
@@ -94039,7 +94097,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 vCf
 xoZ
@@ -94072,16 +94130,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -94199,7 +94257,7 @@ wKs
 wKs
 juV
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -94211,7 +94269,7 @@ xoZ
 xoZ
 xoZ
 xoZ
-pnV
+hAp
 xoZ
 xoZ
 xoZ
@@ -94244,16 +94302,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+teR
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -94371,19 +94429,19 @@ wKs
 wKs
 rde
 xoZ
-pnV
+xoZ
+mAR
+mAR
+mAR
+mAR
+mAR
+mAR
+mAR
+mAR
+mAR
+mAR
+mAR
 wta
-wta
-wta
-wta
-wta
-wta
-wta
-wta
-wta
-wta
-wta
-hvw
 xoZ
 xoZ
 xoZ
@@ -94416,16 +94474,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -94566,8 +94624,8 @@ xoZ
 xoZ
 xoZ
 xoZ
+lum
 qsc
-qsc
 gfy
 gfy
 gfy
@@ -94588,16 +94646,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -94760,16 +94818,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+hvw
+lum
 gfy
 gfy
 "}
@@ -94932,16 +94990,16 @@ gfy
 gfy
 gfy
 gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
-gfy
+lum
+lum
+lum
+lum
+lum
+lum
+lum
+lum
+lum
+lum
 gfy
 gfy
 "}
@@ -210082,8 +210140,8 @@ fpg
 fpg
 fpg
 fpg
-gfy
-gfy
+fpg
+fpg
 dJa
 fpg
 fpg
@@ -210254,8 +210312,8 @@ fpg
 fpg
 fpg
 fpg
-gfy
-gfy
+fpg
+fpg
 dJa
 fpg
 fpg

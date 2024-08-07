@@ -33,9 +33,6 @@
 
 	z_flags = ZM_MIMIC_DEFAULTS | ZM_MIMIC_OVERWRITE | ZM_MIMIC_NO_AO | ZM_ALLOW_ATMOS
 
-/turf/simulated/open/noatmos //Identical to open turf, but we don't allow atmos.
-	z_flags = ZM_MIMIC_DEFAULTS | ZM_MIMIC_OVERWRITE | ZM_MIMIC_NO_AO
-
 /turf/simulated/open/update_dirt()
 	return 0
 
@@ -107,4 +104,94 @@
 
 //Most things use is_plating to test if there is a cover tile on top (like regular floors)
 /turf/simulated/open/is_plating()
+	return 1
+
+
+//Unsimulated Open Space
+
+/turf/unsimulated/open/CanZPass(atom/A, direction)
+	if(locate(/obj/structure/catwalk, src))
+		if(z == A.z)
+			if(direction == DOWN)
+				return 0
+		else if(direction == UP)
+			return 0
+	return 1
+
+/turf/unsimulated/open
+	name = "open space"
+	icon = 'icons/turf/space.dmi'
+	icon_state = ""
+	density = FALSE
+
+	z_flags = ZM_MIMIC_DEFAULTS | ZM_MIMIC_OVERWRITE | ZM_MIMIC_NO_AO | ZM_ALLOW_ATMOS
+
+/turf/unsimulated/open/Entered(atom/movable/mover, atom/oldloc)
+	..()
+	mover.fall(oldloc)
+
+// Called when thrown object lands on this turf.
+/turf/unsimulated/open/hitby(atom/movable/AM)
+	. = ..()
+	AM.fall()
+
+
+// override to make sure nothing is hidden
+/turf/unsimulated/open/levelupdate()
+	for(var/obj/O in src)
+		O.hide(0)
+
+/turf/unsimulated/open/examine(mob/user, distance, infix, suffix)
+	. = ..()
+	if(distance <= 2)
+		var/depth = 1
+		for(var/T = GetBelow(src); isopenspace(T); T = GetBelow(T))
+			depth += 1
+		to_chat(user, "It is about [depth] level\s deep.")
+
+/turf/unsimulated/open/is_open()
+	return TRUE
+
+/turf/unsimulated/open/attackby(obj/item/C, mob/user)
+	if (istype(C, /obj/item/stack/material/rods))
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		if(L)
+			return L.attackby(C, user)
+		var/obj/item/stack/material/rods/R = C
+		if (R.use(1))
+			to_chat(user, SPAN_NOTICE("You lay down the support lattice."))
+			playsound(src, 'sounds/weapons/Genhit.ogg', 50, 1)
+			new /obj/structure/lattice(locate(src.x, src.y, src.z), R.material.name)
+		return
+
+	if (istype(C, /obj/item/stack/tile))
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		if(L)
+			var/obj/item/stack/tile/floor/S = C
+			if (!S.use(1))
+				return
+			qdel(L)
+			playsound(src, 'sounds/weapons/Genhit.ogg', 50, 1)
+			ChangeTurf(/turf/simulated/floor/airless)
+			return
+		else
+			to_chat(user, SPAN_WARNING("The plating is going to need some support."))
+
+	//To lay cable.
+	if(isCoil(C))
+		var/obj/item/stack/cable_coil/coil = C
+		coil.turf_place(src, user)
+		return
+
+	for(var/atom/movable/M in below)
+		if(M.movable_flags & MOVABLE_FLAG_Z_INTERACT)
+			return M.attackby(C, user)
+
+/turf/unsimulated/open/attack_hand(mob/user)
+	for(var/atom/movable/M in below)
+		if(M.movable_flags & MOVABLE_FLAG_Z_INTERACT)
+			return M.attack_hand(user)
+
+//Most things use is_plating to test if there is a cover tile on top (like regular floors)
+/turf/unsimulated/open/is_plating()
 	return 1
