@@ -12,16 +12,15 @@
 /area/site104
 	base_turf = /turf/simulated/open
 
-/area/site104/surface/outside
+/area/site104/surface
 	name = "Open Air"
 	requires_power = 0
 	dynamic_lighting = 1
-	requires_power = 0
 
 /area/site104/surface/opendeck
 	name = "Open Deck"
 	sound_env = HANGAR
-	forced_ambience = 'sounds/ambience/Site104/DeckAmbience.ogg'
+	forced_ambience = list('sounds/ambience/Site104/DeckAmbience.ogg') //Ahh, the sound of the ocean waves and the creaking metal beneath our feet...
 
 /area/site104/engineering/reactor
 	name = "R-UST Reactor"
