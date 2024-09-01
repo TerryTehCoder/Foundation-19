@@ -6,9 +6,9 @@
 	station_levels = list(1,2,3,4,5,6,7)
 	contact_levels = list(1,2,3,4,5,6,7)
 	player_levels = list(1,2,3,4,5,6,7)
-	admin_levels = list(8,9,10)
+	sealed_levels = list(1,2,3,4,5,6,7) //No you cannot teleport into another section of the ocean... not right now anyway.
+	admin_levels = list(8,9)
 	empty_levels = list()
-	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"4"=1,"5"=1,"6"=1,"7"=1)
 	base_turf_by_z = list(
 		"1" = /turf/simulated/floor/beach/water/ocean,
 		"2" = /turf/simulated/floor/plating,
