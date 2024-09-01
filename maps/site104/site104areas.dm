@@ -5,7 +5,56 @@
 		/area/site53/surface/bunker,
 		)
 
+//Elevators
+/* Note to Self, implement correctly...the technology is not ready to meet my great ideas...
+/area/turbolift/site104/logilift1
+	name = "lift (Deck 1 - Engineering)"
+	lift_floor_label = "Engineering Deck"
+	lift_floor_name = "Engineering Deck"
+	lift_announce_str = "Arriving at Engineering Deck."
+	requires_power = 0
+	dynamic_lighting = 1
 
+/area/turbolift/site104/logilift2
+	name = "lift (Deck 2 - Logistics)"
+	lift_floor_label = "Logistics Deck"
+	lift_floor_name = "Logistics Deck"
+	lift_announce_str = "Arriving at Logistics Deck."
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/turbolift/site104/logilift3
+	name = "lift (Deck 3 - Logistics Upper)"
+	lift_floor_label = "Logistics Upper"
+	lift_floor_name = "Logistics Upper"
+	lift_announce_str = "Arriving at Upper Logistics Deck."
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/turbolift/site104/logilift4
+	name = "lift (Deck 4 - Heavy Containment Loading Dock)"
+	lift_floor_label = "Heavy Containment Loading Dock"
+	lift_floor_name = "Heavy Containment Loading Dock"
+	lift_announce_str = "Arriving at Deck 4, Heavy Containment Loading Dock."
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/turbolift/site104/logilift5
+	name = "lift (Deck 5 - Helipad Maintenance)"
+	lift_floor_label = "Helipad Maintenance"
+	lift_floor_name = "Helipad Maintenance"
+	lift_announce_str = "Arriving at Helipad Maintenance."
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/turbolift/site104/logilift6
+	name = "lift (Engineering)"
+	lift_floor_label = "Engineering Deck"
+	lift_floor_name = "Engineering Deck"
+	lift_announce_str = "Arriving at Engineering Deck."
+	requires_power = 0
+	dynamic_lighting = 1
+*/
 
 //Surface Areas
 

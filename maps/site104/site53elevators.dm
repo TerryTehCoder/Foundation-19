@@ -64,3 +64,19 @@
 		/area/turbolift/site53/hub,
 		/area/turbolift/site53/gatea
 		)
+
+/*
+/obj/turbolift_map_holder/logilift // Note to self, add to S104 elevators rather than S53
+	name = "Logistics Elevator"
+	depth = 6
+	lift_size_x = 4
+	lift_size_y = 11
+
+	areas_to_use = list(
+		/area/turbolift/site104/logilift1,
+		/area/turbolift/site104/logilift2,
+		/area/turbolift/site104/logilift3,
+		/area/turbolift/site104/logilift4,
+		/area/turbolift/site104/logilift5,
+		/area/turbolift/site104/logilift6
+	)

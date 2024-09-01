@@ -8,17 +8,17 @@
 	player_levels = list(1,2,3,4,5,6,7)
 	admin_levels = list(8,9,10)
 	empty_levels = list()
-	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"4"=1)
+	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"4"=1,"5"=1,"6"=1,"7"=1)
 	base_turf_by_z = list(
-		"1" = /turf/unsimulated/floor/beach/water/ocean,
-		"2" = /turf/simulated/floor/exoplanet/desert,
-		"3" = /turf/simulated/floor/exoplanet/desert,
-		"4" = /turf/simulated/floor/exoplanet/desert,
-		"2" = /turf/simulated/floor/exoplanet/desert,
-		"3" = /turf/simulated/floor/exoplanet/desert,
-		"5" = /turf/simulated/floor/exoplanet/desert,
-		"6" = /turf/simulated/floor/exoplanet/desert,
-		"7" = /turf/simulated/floor/exoplanet/desert
+		"1" = /turf/simulated/floor/beach/water/ocean,
+		"2" = /turf/simulated/floor/plating,
+		"3" = /turf/simulated/floor/plating,
+		"4" = /turf/simulated/floor/plating,
+		"2" = /turf/simulated/floor/plating,
+		"3" = /turf/simulated/floor/plating,
+		"5" = /turf/simulated/floor/plating,
+		"6" = /turf/simulated/floor/plating,
+		"7" = /turf/simulated/floor/plating
 	)
 	overmap_size = 35
 	overmap_event_areas = 0
@@ -125,9 +125,7 @@
 
 /datum/map/site104/get_map_info()
 	. = list()
-	. +=  "You're aboard Site-104, a Foundation facility located off the coast of Northern Alaska using the frame of a decommisioned Oil Rig."
-	. +=  "While the facility isn't as large as Site-53, its tight corridors and external catwalks will keep you wondering what that noise you just heard was."
-	. +=  "This area of the region is largely unoccupied, with only the cold nip of the wind and the ocean waves to keep you company."
+	. +=  "You're aboard Site-104, a Foundation facility located a few miles off the Prime Meridian of the Atlantic Ocean using the frame of a decommissioned Oil Rig. While the facility isn't as large as Site-53, its tight corridors and external catwalks will keep you wondering what that noise you just heard was. Through both record manipulation and outright clever political play this area of the region is largely unoccupied, with only the cold nip of the wind and the ocean waves to keep you company, and sometimes a few tourists who's curiosity is a little too strong for their own good..."
 	return jointext(., "<br>")
 
 /*
