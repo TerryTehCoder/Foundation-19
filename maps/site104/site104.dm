@@ -2,7 +2,6 @@
 
 	#include "site53_announcements.dm"
 	#include "site53areas.dm"
-	#include "site53elevators.dm"
 	#include "site53_presets.dm"
 	#include "site53shuttles.dm"
 	#include "site104areas.dm"
@@ -35,8 +34,6 @@
 	#include "structures/closets/supply.dm"
 
 	#include "site104.dmm"
-	#include "z1_admin.dmm"
-	#include "z2_transit.dmm"
 
 	#define using_map_DATUM /datum/map/site104
 

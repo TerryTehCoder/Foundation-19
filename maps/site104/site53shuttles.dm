@@ -254,6 +254,9 @@
 	base_area = /area/quartermaster/hangar
 	base_turf = /turf/simulated/floor/plating
 
+/*
+Entirely unused car in the vacant surface area that looks like a shuttle.
+
 /datum/shuttle/autodock/ferry/exploring
 	name = "Car 1"
 	warmup_time = 20
@@ -271,3 +274,5 @@
 	name = "Village Checkpoint"
 	landmark_tag = "scpcar1_out"
 	base_turf = /turf/simulated/floor/exoplanet/concrete
+
+*/
