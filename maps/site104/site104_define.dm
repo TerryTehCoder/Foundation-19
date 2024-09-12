@@ -14,11 +14,9 @@
 		"2" = /turf/simulated/floor/plating,
 		"3" = /turf/simulated/floor/plating,
 		"4" = /turf/simulated/floor/plating,
-		"2" = /turf/simulated/floor/plating,
-		"3" = /turf/simulated/floor/plating,
 		"5" = /turf/simulated/floor/plating,
 		"6" = /turf/simulated/floor/plating,
-		"7" = /turf/simulated/floor/plating
+		"7" = /turf/simulated/floor/plating,
 	)
 	overmap_size = 35
 	overmap_event_areas = 0

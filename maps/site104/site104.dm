@@ -34,6 +34,8 @@
 	#include "structures/closets/supply.dm"
 
 	#include "site104.dmm"
+	#include "z1_admin.dmm"
+	#include "z2_transit.dmm"
 
 	#define using_map_DATUM /datum/map/site104
 
