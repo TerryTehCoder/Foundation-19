@@ -95,6 +95,32 @@
 	landing_message = "A train whistle is heard in the distance. Clear the tunnel!"
 	takeoff_message = "A train whistle is heard as the trains pistons kick into motion."
 
+//Site 104 specific vehicles
+
+/datum/shuttle/autodock/ferry/aicplatform
+	name = "A.I.C Primary Housing Lift"
+	sound_takeoff = 'sounds/ambience/Site104/AICPlatformRaising.ogg'
+	sound_landing = 'sounds/ambience/Site104/AICPlatformRaising.ogg' //Right now I can only ge
+	warmup_time = 9
+	location = 1
+	shuttle_area = list(/area/site104/aihousing/aimaincore)
+	waypoint_station = "nav_aicplatform_raised"
+	waypoint_offsite = "nav_aicplatform_lowered"
+	landing_message = "Pistons click into place, their servos suspended, holding the A.I.C core in position."
+	takeoff_message = "Pistons engage in large metal arms on the ceiling moving the A.I.C Core."
+	audioalways = 1
+
+/obj/effect/shuttle_landmark/aicplatform/lowered
+	name = "A.I.C Housing Bottomside"
+	landmark_tag = "nav_aicplatform_lowered"
+	base_turf = /turf/simulated/floor/reinforced
+	base_area = /area/site104/aihousing/interiorsanctum
+
+/obj/effect/shuttle_landmark/aicplatform/raised
+	name = "A.I.C Housing Topside"
+	landmark_tag = "nav_aicplatform_raised"
+	base_turf = /turf/simulated/floor/reinforced
+	base_area = /area/site104/aihousing/interiorsanctum
 
 /obj/effect/shuttle_landmark/train/central
 	name = "Central Command"

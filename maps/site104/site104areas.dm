@@ -59,17 +59,22 @@
 //Surface Areas
 
 /area/site104
-	base_turf = /turf/simulated/open
+	base_turf = /turf/unsimulated/open
 
 /area/site104/surface
 	name = "Open Air"
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list('sounds/ambience/Site104/BoatHorn.ogg', 'sounds/ambience/Site104/Seagulls.ogg')
 
 /area/site104/surface/opendeck
 	name = "Open Deck"
 	sound_env = HANGAR
 	forced_ambience = list('sounds/ambience/Site104/DeckAmbience.ogg') //Ahh, the sound of the ocean waves and the creaking metal beneath our feet...
+
+/area/site104/maintenance/interior
+	name = "Site-104 Maintenance"
+	ambience = list('sounds/ambience/Site104/RigMetalStress.ogg')
 
 /area/site104/engineering/reactor
 	name = "R-UST Reactor"
@@ -80,7 +85,7 @@
 /area/site104/engineering/workshop
 	name = "Workshop"
 
-/area/site104/maintenance/engimaints
+/area/site104/maintenance/interior/engimaints
 	name = "Engineering Maintenance"
 
 /area/site104/engineering/lockers
@@ -199,3 +204,15 @@
 
 /area/site104/engineering/marinecontrolbottom
 	name = "Marine Control Basement"
+
+/area/site104/aihousing/interiorsanctum
+	name = "Interior A.I.C Housing"
+
+/area/site104/aihousing/aimaincore
+	name = "A.I.C Main Core"
+
+/area/site104/aihousing/control1
+	name = "A.I.C Housing Control Center 1"
+
+/area/site104/aihousing/entrancehall
+	name = "South A.I.C Housing Hallway"
