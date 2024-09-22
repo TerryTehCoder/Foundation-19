@@ -123,6 +123,7 @@
 	icon = 'icons/turf/space.dmi'
 	icon_state = ""
 	density = FALSE
+	var/buildable  = 1
 
 	z_flags = ZM_MIMIC_DEFAULTS | ZM_MIMIC_OVERWRITE | ZM_MIMIC_NO_AO | ZM_ALLOW_ATMOS
 
@@ -153,39 +154,43 @@
 	return TRUE
 
 /turf/unsimulated/open/attackby(obj/item/C, mob/user)
-	if (istype(C, /obj/item/stack/material/rods))
-		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
-		if(L)
-			return L.attackby(C, user)
-		var/obj/item/stack/material/rods/R = C
-		if (R.use(1))
-			to_chat(user, SPAN_NOTICE("You lay down the support lattice."))
-			playsound(src, 'sounds/weapons/Genhit.ogg', 50, 1)
-			new /obj/structure/lattice(locate(src.x, src.y, src.z), R.material.name)
-		return
-
-	if (istype(C, /obj/item/stack/tile))
-		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
-		if(L)
-			var/obj/item/stack/tile/floor/S = C
-			if (!S.use(1))
-				return
-			qdel(L)
-			playsound(src, 'sounds/weapons/Genhit.ogg', 50, 1)
-			ChangeTurf(/turf/simulated/floor/airless)
+	if(buildable)
+		if (istype(C, /obj/item/stack/material/rods))
+			var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+			if(L)
+				return L.attackby(C, user)
+			var/obj/item/stack/material/rods/R = C
+			if (R.use(1))
+				to_chat(user, SPAN_NOTICE("You lay down the support lattice."))
+				playsound(src, 'sounds/weapons/Genhit.ogg', 50, 1)
+				new /obj/structure/lattice(locate(src.x, src.y, src.z), R.material.name)
 			return
-		else
-			to_chat(user, SPAN_WARNING("The plating is going to need some support."))
 
-	//To lay cable.
-	if(isCoil(C))
-		var/obj/item/stack/cable_coil/coil = C
-		coil.turf_place(src, user)
+		if (istype(C, /obj/item/stack/tile))
+			var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+			if(L)
+				var/obj/item/stack/tile/floor/S = C
+				if (!S.use(1))
+					return
+				qdel(L)
+				playsound(src, 'sounds/weapons/Genhit.ogg', 50, 1)
+				ChangeTurf(/turf/simulated/floor/airless)
+				return
+			else
+				to_chat(user, SPAN_WARNING("The plating is going to need some support."))
+
+		//To lay cable.
+		if(isCoil(C))
+			var/obj/item/stack/cable_coil/coil = C
+			coil.turf_place(src, user)
+			return
+
+		for(var/atom/movable/M in below)
+			if(M.movable_flags & MOVABLE_FLAG_Z_INTERACT)
+				return M.attackby(C, user)
+	else
+		to_chat(user, SPAN_NOTICE("The structure is too unstable to build here.."))
 		return
-
-	for(var/atom/movable/M in below)
-		if(M.movable_flags & MOVABLE_FLAG_Z_INTERACT)
-			return M.attackby(C, user)
 
 /turf/unsimulated/open/attack_hand(mob/user)
 	for(var/atom/movable/M in below)
@@ -195,3 +200,6 @@
 //Most things use is_plating to test if there is a cover tile on top (like regular floors)
 /turf/unsimulated/open/is_plating()
 	return 1
+
+/turf/unsimulated/open/nobuild //A cheesy trick to keep people from circumventing catwalk routes by just... building around them, it's also a good idea because unsimulated turfs generally shouldn't be buildable on.
+	buildable = 0

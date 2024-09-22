@@ -12,6 +12,7 @@
 #define NETWORK_343 "SCP-343 CCTV Network"
 #define NETWORK_895 "SCP-895 CCTV Network (CAUTION!)"
 #define NETWORK_RESWING "Research CCTV Network"
+#define NETWORK_AIC "A.I.C Network"
 /datum/map/site53/get_network_access(network)
 	switch(network)
 		if(NETWORK_ENGINE)
@@ -42,6 +43,8 @@
 			return ACCESS_SCIENCE_LVL3
 		if(NETWORK_RESWING)
 			return ACCESS_SCIENCE_LVL1
+		if(NETWORK_AIC)
+			return ACCESS_SECURITY_LVL1
 	return get_shared_network_access(network) || ..()
 
 /datum/map/site53
@@ -60,7 +63,8 @@
 		NETWORK_012,
 		NETWORK_895,
 		NETWORK_035,
-		NETWORK_343
+		NETWORK_343,
+		NETWORK_AIC
 	)
 
 //
@@ -109,6 +113,12 @@
 
 /obj/machinery/camera/network/reswing
 	network = list(NETWORK_RESWING)
+
+/obj/machinery/camera/network/aic
+	network = list(NETWORK_AIC)
+
+/obj/machinery/camera/motion/network/aic
+	network = list(NETWORK_AIC)
 
 // Substation SMES
 /obj/machinery/power/smes/buildable/preset/ds90/substation/configure_and_install_coils()

@@ -108,7 +108,7 @@
 	waypoint_offsite = "nav_aicplatform_lowered"
 	landing_message = "Pistons click into place, their servos suspended, holding the A.I.C core in position."
 	takeoff_message = "Pistons engage in large metal arms on the ceiling moving the A.I.C Core."
-	audioalways = 1
+	//audioalways = 1
 
 /obj/effect/shuttle_landmark/aicplatform/lowered
 	name = "A.I.C Housing Bottomside"
