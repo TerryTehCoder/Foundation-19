@@ -80,6 +80,10 @@
 		if(!doors_closing)
 			close_doors()
 			doors_closing = 1
+
+			//Doors are closed, lets play some tunes.
+
+			playsound(control_panel_interior.loc, sound('sounds/music/elevatormusic.ogg', channel = GLOB.ambience_sound_channel), 50) //We piggy back on ambience channel so we can Kill it later.
 			return 1
 		else // We failed to close the doors - probably, someone is blocking them; stop trying to move
 			doors_closing = 0
@@ -97,6 +101,7 @@
 		playsound(control_panel_interior.loc, origin.arrival_sound, 50, 1)
 		show_sound_effect(control_panel_interior.loc, soundicon = SFX_ICON_SMALL)
 		target_floor.arrived(src)
+		playsound(control_panel_interior.loc, sound(null, channel = GLOB.ambience_sound_channel)) //Stop any elevator music that might still be playing.
 		target_floor = null
 
 		next_process = world.time + 2 SECONDS
