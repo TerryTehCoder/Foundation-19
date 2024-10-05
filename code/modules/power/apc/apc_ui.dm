@@ -100,6 +100,16 @@
 		balloon_alert(user, "no free hands!")
 		. = min(., STATUS_UPDATE)
 
+
+/obj/machinery/power/apc/breaker/CanUseTopic(mob/user, datum/topic_state/state)
+	. = ..()
+	if(!accessible)
+		if(istype(user, /mob/observer/ghost))
+			return
+		else
+			balloon_alert(user, "Lids in the way!")
+			return STATUS_CLOSE
+
 /obj/machinery/power/apc/Topic(href, href_list)
 	if(..())
 		return 1

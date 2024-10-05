@@ -242,7 +242,7 @@
 		else if(stat & (BROKEN|MAINT))
 			balloon_alert(user, "APC is broken!")
 		else
-			flick("apc-spark", src)
+			flick(sparkicon, src)
 			if (do_after(user, 0.75 SECONDS, src, bonus_percentage = 25))
 				emagged = TRUE
 				req_access.Cut()

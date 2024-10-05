@@ -36,7 +36,7 @@
 	var/operating = TRUE       // Bool for main toggle.
 	var/charging = 0        // Whether or not it's charging. 0 - not charging but not full, 1 - charging, 2 - full
 	var/chargemode = TRUE      // Whether charging is toggled on or off.
-	var/locked = TRUE
+	var/locked = TRUE //Whether the access panel itself is locked or not.
 	var/coverlocked = TRUE     // Whether you can crowbar off the cover or need to swipe ID first.
 	var/aidisabled = FALSE
 	var/lastused_light = 0    // Internal stuff for UI and bookkeeping; can read off values but don't modify.
@@ -67,6 +67,22 @@
 	var/global/list/status_overlays_lighting
 	var/global/list/status_overlays_environ
 	var/auto_name = TRUE
+
+
+//Modularity for making custom APC's such as one without a screen.
+
+	var/hasoverlay = TRUE //For checking if the APC has or doesn't have (such as a breaker box) an overlay.
+	var/allgoodicon = "apc0" //What does the sprite look like when the APC is working?
+	var/maintenance_icon = "apcmaint" //What does the sprite look like when the cell and wiring has been removed?
+	var/openediconbase = "apc" //What does the sprite look like when the APC is opened, follows numerical 1-2 pattern. (I.E: apc1-open wired without cell, apc2-open wired with cell). Your iconstate must have 1 and 2 at the end to indicate these states.
+	var/brokenicon = "apc-b" //What does the sprite look like when the APC is broken?
+	var/emagicon = "apcemag" //What does the sprite look like when the APC is emagged?
+	var/wiresicon = "apcewires" //What does the sprite look like when the APC's maintenance panel is opened with a screwdriver?
+	var/sparkicon = "apc-spark" //What does the sprite look like when the APC sparks?
+	var/accessible = FALSE //Is the interface accessible? Is something preventing access to it such as a Lid?
+	var/coverlockedtext = "The cover is locked."
+	var/coverunlockedtext = "The cover is unlocked."
+
 
 /obj/machinery/power/apc/Initialize(mapload, ndir, populate_parts = TRUE, building=0)
 	// offset 22 pixels in direction of dir
@@ -150,9 +166,9 @@
 			if (stat & MAINT)
 				to_chat(user, "The cover is closed. It doesn't appear to function.")
 			else if (coverlocked || (hacker && !hacker.hacked_apcs_hidden))
-				to_chat(user, "The cover is locked.")
+				to_chat(user, coverlockedtext)
 			else
-				to_chat(user, "The cover is closed.")
+				to_chat(user, coverunlockedtext)
 
 /obj/machinery/power/apc/components_are_accessible(path)
 	. = opened
@@ -230,12 +246,13 @@
 	update_channels()
 
 	// update icon & area power if anything changed
-	if(last_lt != lighting || last_eq != equipment || last_en != environ || force_update)
-		force_update = 0
-		queue_icon_update()
-		update()
-	else if (last_ch != charging)
-		queue_icon_update()
+	if(hasoverlay)
+		if(last_lt != lighting || last_eq != equipment || last_en != environ || force_update)
+			force_update = 0
+			queue_icon_update()
+			update()
+		else if (last_ch != charging)
+			queue_icon_update()
 
 /obj/machinery/power/apc/proc/update_name(updates)
 	if(auto_name)
@@ -250,3 +267,43 @@
 	matter = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 	w_class = ITEM_SIZE_SMALL
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
+
+/obj/machinery/power/apc/breaker //Breaker Boxes used on Site-104.. it's a bit of an old place.
+	name = "Breaker Box"
+	desc = "A breaker-box for the area electrical systems.<br><span class='notice'>Alt + Click to open the lid.</span>"
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "breaker_closed"
+
+	hasoverlay = FALSE
+	allgoodicon = "breaker_closed" //What does the sprite look like when the APC is closed and undamaged?
+	maintenance_icon = "breaker_empty" //What does the sprite look like when the cell and wiring has been removed?
+	openediconbase = "breaker" //What does the sprite look like when the APC is opened, follows numerical 1-2 pattern. (I.E: apc1-open wired without cell, apc2-open wired with cell). Your iconstate must have 1 and 2 at the end to indicate these states.
+	brokenicon = "breaker_broken" //What does the sprite look like when the APC is broken?
+	emagicon = "breaker_emagged" //What does the sprite look like when the APC is emagged?
+	wiresicon = "breaker_internals" //What does the sprite look like when the APC's maintenance panel is opened with a screwdriver?
+	sparkicon = "breaker_spark" //What does the sprite look like when the APC sparks?
+	coverlockedtext = "The interior plating is secured."
+	coverunlockedtext = "The interior plating is unsecured."
+
+/obj/machinery/power/apc/breaker/AltClick(mob/user)
+	if(!CanPhysicallyInteract(user) || user.incapacitated()) //No you can't open a breaker lid while unconscious or without arms.. unfortunately
+		return ..()
+	if(locked) //Lid is locked! We can't open the lid!
+		balloon_alert(user, "Lid is locked!")
+		return
+	if(accessible) //Closing the Lid
+		accessible = !accessible
+		icon_state = allgoodicon
+		playsound(user, 'sounds/machines/breakerclose.ogg')
+	else //Lid is unlocked, opening the lid
+		accessible = !accessible
+		icon_state = "breaker_accessible" //What does the sprite look like when the lid is open but no maintenance has been done?
+		playsound(user, 'sounds/machines/breakeropen.ogg')
+
+/obj/machinery/power/apc/breaker/examine(mob/user, distance)
+	. = ..()
+	if(distance <= 1)
+		if(locked)
+			to_chat(user, "The lid is locked.")
+		else
+			to_chat(user, "The lid is unlocked.")

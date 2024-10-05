@@ -55,38 +55,40 @@
 
 	if(update & 1) // Updating the icon state
 		if(update_state & UPDATE_ALLGOOD)
-			icon_state = "apc0"
+			icon_state = allgoodicon
 		else if(update_state & (UPDATE_OPENED1|UPDATE_OPENED2))
-			var/basestate = "apc[ get_cell() ? "2" : "1" ]"
+			var/basestate = "[openediconbase][ get_cell() ? "2" : "1" ]"
 			if(update_state & UPDATE_OPENED1)
 				if(update_state & (UPDATE_MAINT|UPDATE_BROKE))
-					icon_state = "apcmaint" //disabled APC cannot hold cell
+					icon_state = maintenance_icon //disabled APC cannot hold cell
 				else
 					icon_state = basestate
 			else if(update_state & UPDATE_OPENED2)
-				icon_state = "[basestate]-nocover"
+				icon_state = "[basestate]-nocover" // Whatever your basestate is called + -nocover, in this case apc1 and apc2 no cover versions.
 		else if(update_state & UPDATE_BROKE)
-			icon_state = "apc-b"
+			icon_state = brokenicon
 		else if(update_state & UPDATE_BLUESCREEN)
-			icon_state = "apcemag"
+			icon_state = emagicon
 		else if(update_state & UPDATE_WIREEXP)
-			icon_state = "apcewires"
+			icon_state = wiresicon
 
 	if(!(update_state & UPDATE_ALLGOOD))
-		if(overlays.len)
-			cut_overlays()
-			return
+		if(hasoverlay)
+			if(overlays.len)
+				cut_overlays()
+				return
 
 	if(update & 2)
-		if(overlays.len)
-			cut_overlays()
-		if(!(stat & (BROKEN|MAINT)) && update_state & UPDATE_ALLGOOD)
-			add_overlay(status_overlays_lock[locked+1])
-			add_overlay(status_overlays_charging[charging+1])
-			if(operating)
-				add_overlay(status_overlays_equipment[equipment+1])
-				add_overlay(status_overlays_lighting[lighting+1])
-				add_overlay(status_overlays_environ[environ+1])
+		if(hasoverlay)
+			if(overlays.len)
+				cut_overlays()
+			if(!(stat & (BROKEN|MAINT)) && update_state & UPDATE_ALLGOOD)
+				add_overlay(status_overlays_lock[locked+1])
+				add_overlay(status_overlays_charging[charging+1])
+				if(operating)
+					add_overlay(status_overlays_equipment[equipment+1])
+					add_overlay(status_overlays_lighting[lighting+1])
+					add_overlay(status_overlays_environ[environ+1])
 
 	if(update & 3)
 		if(update_state & (UPDATE_OPENED1|UPDATE_OPENED2|UPDATE_BROKE))
