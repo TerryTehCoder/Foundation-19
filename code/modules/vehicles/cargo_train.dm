@@ -380,3 +380,35 @@
 		anchored = FALSE
 	else
 		anchored = TRUE
+
+/obj/vehicle/train/cargo/engine/forklift
+	name = "Logistics Forklift"
+	desc = "A metal divinity from above and a crate lifting monster, they say only those with forklift certification can harness its True Potential."
+	icon = 'icons/forklift.dmi'
+	icon_state = "forklift"
+	health = 150
+	maxhealth = 150 //We're a little tougher than the cargo trains, but even titans must fall eventually.
+	move_delay = 1.3 //We're also a little...slower.
+	buckle_pixel_shift = "x=0;y=0;z=7"
+
+
+
+//TD Emag Crush Code
+
+/obj/item/key/forklift
+	name = "key"
+	desc = "A keyring with a set of small steel keys, any tech would recognize this as a pair of forklift keys!"
+	icon = 'icons/obj/vehicles.dmi'
+	icon_state = "train_keys"
+	w_class = ITEM_SIZE_TINY
+
+/obj/vehicle/train/cargo/engine/forklift/attackby(obj/item/W, mob/user)
+	. = ..()
+	if(istype(W, /obj/item/key/cargo_train))
+		if(!key)
+			if(!user.unEquip(W, src))
+				return
+			key = W
+			verbs += /obj/vehicle/train/cargo/engine/verb/remove_key
+		return
+

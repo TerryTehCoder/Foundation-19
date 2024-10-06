@@ -343,3 +343,18 @@
 
 /obj/structure/closet/crate/uranium/WillContain()
 	return list(/obj/item/stack/material/uranium/ten = 5)
+
+/obj/structure/closet/crate/woodencrate
+	name = "Wooden Crate"
+	desc = "A generic wooden crate, I wonder what's inside?"
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "wooden-crate" //TD, Opened Variant
+	icon_opened = "wooden-crate"
+	icon_closed = "wooden-crate"
+
+/obj/structure/closet/crate/desk //We have interior contents so it's easier to just use crate code.
+	name = "Wooden Desk"
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "deskclosed"
+	icon_closed = "deskclosed"
+	icon_opened = "deskopened"

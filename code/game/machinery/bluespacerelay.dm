@@ -16,3 +16,11 @@
 		icon_state = "[initial(icon_state)]_off"
 	else
 		icon_state = initial(icon_state)
+
+/obj/machinery/bluespacerelay/dish
+	name = "Long Distance Satellite Relay"
+	desc = "A massive scooped radar dish that allows the site to contact regional command instantly through vast distances."
+	machine_desc = "Used to instantly send messages across vast distances. A Satellite-Relay is required to directly contact Regional Command through crisis channels."
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "satdish"
+	idle_power_usage = 0 //It's a satellite dish, it doesn't really need power, plus it's outside so hard to regulate.

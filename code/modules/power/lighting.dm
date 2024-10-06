@@ -190,6 +190,65 @@
 	lightbulb.set_color(color)
 	queue_icon_update()
 
+//Tube metal cage variant
+/obj/machinery/light/caged
+	name = "Caged Light Fixture"
+	base_state = "lcaged"
+	icon_state = "lcaged"
+	desc = "A caged lighting fixture."
+	light_type = /obj/item/light/tube/caged
+	var/secured = TRUE //Are we restricted from doing regular light stuff like pulling the bulb out or replacing it?
+	var/health = 100 //Arbitrary, could be anything.
+
+/obj/machinery/light/caged/attack_generic(mob/user, damage)
+	. = ..()
+	if(!damage)
+		return
+	if(health <= 5)
+		user.visible_message(SPAN_WARNING("[user] smashes the light!"), SPAN_WARNING("You smash the light!"))
+		attack_animation(user)
+		broken()
+	else
+		health = health-5 // 100 / 5 = 20 hits to break... you're gonna be here awhile.
+		user.visible_message(SPAN_WARNING("[user] bashes against the caged light!"), SPAN_WARNING("You bash the light, damaging it slightly!"))
+
+/obj/machinery/light/caged/examine(mob/user)
+	. = ..()
+	if(health == 100)
+		user.visible_message(SPAN_NOTICE("It appears to be in relatively perfect condition."))
+		return
+	if(health >= 75)
+		user.visible_message(SPAN_NOTICE("It appears to be a little damaged, metal bent at the edges."))
+		return
+	if(health >= 50)
+		user.visible_message(SPAN_NOTICE("It looks like it could take about [health/5] more hits before shattering.."))
+		return
+
+/obj/machinery/light/caged/attackby(obj/item/W, mob/user)
+	. = ..()
+	if(secured)
+		balloon_alert(user, "Can't reach through the metal cover!")
+		return
+	if(isScrewdriver(W) & secured)
+		user.visible_message(SPAN_WARNING("[user] unscrews the protective casing around the caged light."), SPAN_WARNING("You unscrew the protective casing around the caged light."))
+		secured = FALSE
+		icon_state = "tube_caged1" //Placeholder sprite for cage removed.
+	if(isScrewdriver(W) & !secured)
+		user.visible_message(SPAN_WARNING("[user] screws the protective casing around the caged light back on."), SPAN_WARNING("You unscrew the protective casing around the caged light."))
+		secured = TRUE
+		icon_state = "tube_caged1" //Placeholder sprite for cage removed.
+
+/obj/machinery/light/buoy
+	name = "Hazard Buoy"
+	desc = "A medium sized buoy used to light paths amid the dark ocean waves, small jets help them maintain position."
+	base_state = "hazardbuoy"
+	icon_state = "hazardbuoy"
+	light_type = /obj/item/light/tube/buoy
+
+
+/obj/machinery/light/buoy/powered()
+	return TRUE
+
 // the smaller bulb light fixture
 /obj/machinery/light/small
 	icon_state = "bulb_map"

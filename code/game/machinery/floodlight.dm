@@ -84,3 +84,11 @@
 	change_power_consumption(initial(active_power_usage) * light_mod, POWER_USE_ACTIVE)
 	if (use_power)
 		set_light(lamp_brightness, lamp_inner_range, lamp_outer_range)
+
+/obj/machinery/floodlight/wallmounted
+	name = "Mounted Floodlight"
+	desc = "A wall mounted floodlight for a broader range of illumintion needs."
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "wallfloodlight"
+
+//Needs a frame item

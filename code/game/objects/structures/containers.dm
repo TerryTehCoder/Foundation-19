@@ -9,6 +9,8 @@
 	bound_height = 32
 	density = TRUE
 	anchored = TRUE
+	plane = MOB_PLANE
+	layer = ABOVE_HUMAN_LAYER
 
 /obj/structure/shipping_container/Initialize(mapload)
 	. = ..()
