@@ -7,9 +7,9 @@
 	icon_state = "airtunnel0e"
 	anchored = TRUE
 	density = TRUE
-	var/obj/machinery/gravity_generator/gravity_generator
+	var/obj/machinery/gravity_generator/gravity_generator = null
 
-/obj/machinery/gravity_generator/
+/obj/machinery/gravity_generator
 	name = "Gravitational Generator"
 	desc = "A device which produces a gravaton field when set up."
 	icon = 'icons/obj/singularity.dmi'
@@ -21,6 +21,7 @@
 	var/on = 1
 	var/list/localareas = list()
 	var/effectiverange = 25
+	var/obj/machinery/computer/gravity_control_computer/computer = null
 
 	// Borrows code from cloning computer
 /obj/machinery/computer/gravity_control_computer/Initialize()
@@ -31,13 +32,22 @@
 	. = ..()
 	locatelocalareas()
 
+
 /obj/machinery/computer/gravity_control_computer/proc/updatemodules()
-	for(dir in list(NORTH,EAST,SOUTH,WEST))
-		gravity_generator = locate(/obj/machinery/gravity_generator/, get_step(src, dir))
-		if (gravity_generator)
-			return
+	var/area/area = get_area(src)
+	for(var/obj/machinery/gravity_generator/G in area)
+		gravity_generator = G
+		if(gravity_generator)
+			gravity_generator.computer = src
+			break
 
 /obj/machinery/gravity_generator/proc/locatelocalareas()
+	var/area/area = get_area(src)
+	for(var/obj/machinery/computer/gravity_control_computer/C in area)
+		computer = C
+		if(computer)
+			computer.gravity_generator = src
+			break
 	for(var/area/A in range(src,effectiverange))
 		if(istype(A,/area/space))
 			continue // No (de)gravitizing space.
