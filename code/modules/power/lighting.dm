@@ -196,7 +196,6 @@
 	base_state = "lcaged"
 	icon_state = "lcaged"
 	desc = "A caged lighting fixture."
-	light_type = /obj/item/light/tube/caged
 	var/secured = TRUE //Are we restricted from doing regular light stuff like pulling the bulb out or replacing it?
 	var/health = 100 //Arbitrary, could be anything.
 
@@ -243,7 +242,6 @@
 	desc = "A medium sized buoy used to light paths amid the dark ocean waves, small jets help them maintain position."
 	base_state = "hazardbuoy"
 	icon_state = "hazardbuoy"
-	light_type = /obj/item/light/tube/buoy
 
 
 /obj/machinery/light/buoy/powered()
