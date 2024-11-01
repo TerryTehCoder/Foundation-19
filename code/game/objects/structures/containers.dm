@@ -107,11 +107,3 @@
 /obj/structure/shipping_container/generic/darkorange
 	name = "\improper Dark orange shipping container"
 	icon_state = "darkorangegeneric"
-
-
-
-
-
-
-
-

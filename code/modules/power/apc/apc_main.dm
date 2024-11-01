@@ -275,12 +275,12 @@
 	icon_state = "breaker_closed"
 
 	hasoverlay = FALSE
-	allgoodicon = "breaker_closed" //What does the sprite look like when the APC is closed and undamaged?
-	maintenance_icon = "breaker_empty" //What does the sprite look like when the cell and wiring has been removed?
+	allgoodicon = "breaker_good" //What does the sprite look like when the APC is closed and undamaged?
+	maintenance_icon = "breaker_maint" //What does the sprite look like when the cell and wiring has been removed?
 	openediconbase = "breaker" //What does the sprite look like when the APC is opened, follows numerical 1-2 pattern. (I.E: apc1-open wired without cell, apc2-open wired with cell). Your iconstate must have 1 and 2 at the end to indicate these states.
-	brokenicon = "breaker_broken" //What does the sprite look like when the APC is broken?
-	emagicon = "breaker_emagged" //What does the sprite look like when the APC is emagged?
-	wiresicon = "breaker_internals" //What does the sprite look like when the APC's maintenance panel is opened with a screwdriver?
+	brokenicon = "breaker_damaged" //What does the sprite look like when the APC is broken?
+	emagicon = "breaker_emag" //What does the sprite look like when the APC is emagged?
+	wiresicon = "breaker_wires" //What does the sprite look like when the APC's maintenance panel is opened with a screwdriver?
 	sparkicon = "breaker_spark" //What does the sprite look like when the APC sparks?
 	coverlockedtext = "The interior plating is secured."
 	coverunlockedtext = "The interior plating is unsecured."
@@ -297,9 +297,13 @@
 		playsound(user, 'sounds/machines/breakerclose.ogg')
 	else //Lid is unlocked, opening the lid
 		accessible = !accessible
-		icon_state = "breaker_accessible" //What does the sprite look like when the lid is open but no maintenance has been done?
+		var/basestate = "[openediconbase][ get_cell() ? "2" : "1" ]"
+		icon_state = basestate //If maintenance is in progress (like the cell is removed) we don't want to override this with closing/opening, so we set it to whatever the current basestate is.
 		playsound(user, 'sounds/machines/breakeropen.ogg')
 
+/* TD
+- Screwdrivering is resetting icon to open, maybe restrict accessing wires while lid is open?
+*/
 /obj/machinery/power/apc/breaker/examine(mob/user, distance)
 	. = ..()
 	if(distance <= 1)

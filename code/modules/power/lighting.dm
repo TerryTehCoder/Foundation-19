@@ -193,8 +193,8 @@
 //Tube metal cage variant
 /obj/machinery/light/caged
 	name = "Caged Light Fixture"
-	base_state = "lcaged"
-	icon_state = "lcaged"
+	base_state = "caged"
+	icon_state = "caged_map"
 	desc = "A caged lighting fixture."
 	var/secured = TRUE //Are we restricted from doing regular light stuff like pulling the bulb out or replacing it?
 	var/health = 100 //Arbitrary, could be anything.
@@ -237,14 +237,26 @@
 		secured = TRUE
 		icon_state = "tube_caged1" //Placeholder sprite for cage removed.
 
+/obj/machinery/light/wallmounted
+	name = "Mounted Floodlight"
+	desc = "A wall mounted floodlight for a broader range of illumintion needs."
+	base_state = "wallflood"
+	icon_state = "wallflood1"
+	icon = 'icons/teststructures_small.dmi'
+
+/obj/machinery/light/wallmounted/powered()
+	return TRUE
+
+//Needs a frame item
+
+
 /obj/machinery/light/buoy
 	name = "Hazard Buoy"
 	desc = "A medium sized buoy used to light paths amid the dark ocean waves, small jets help them maintain position."
-	base_state = "hazardbuoy"
-	icon_state = "hazardbuoy"
+	base_state = "buoy"
+	icon_state = "buoy1"
 
-
-/obj/machinery/light/buoy/powered()
+/obj/machinery/light/buoy/powered() //It's a lifelong battery or some bullshit I don't know.
 	return TRUE
 
 // the smaller bulb light fixture

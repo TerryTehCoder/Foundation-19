@@ -348,13 +348,13 @@
 	name = "Wooden Crate"
 	desc = "A generic wooden crate, I wonder what's inside?"
 	icon = 'icons/teststructures_small.dmi'
-	icon_state = "wooden-crate" //TD, Opened Variant
-	icon_opened = "wooden-crate"
-	icon_closed = "wooden-crate"
+	icon_state = "woodencrate_C" //TD, Opened Variant
+	icon_opened = "woodencrate_O"
+	icon_closed = "woodencrate_C"
 
 /obj/structure/closet/crate/desk //We have interior contents so it's easier to just use crate code.
-	name = "Wooden Desk"
+	name = "Metal Desk"
 	icon = 'icons/teststructures_small.dmi'
-	icon_state = "deskclosed"
-	icon_closed = "deskclosed"
-	icon_opened = "deskopened"
+	icon_state = "metaldesk_C"
+	icon_opened = "metaldesk_O"
+	icon_closed = "metaldesk_C"

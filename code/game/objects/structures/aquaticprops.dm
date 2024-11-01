@@ -14,13 +14,6 @@
 	icon_state = "life_preserver"
 	layer = STRUCTURE_LAYER
 
-/obj/structure/barrel
-	name = "Barrel"
-	desc = "A generic barrel."
-	icon = 'icons/teststructures_small.dmi'
-	icon_state = "barrel"
-	layer = STRUCTURE_LAYER
-
 /obj/structure/barnacles
 	name = "Barnacle Pile"
 	desc = "Looks like a bunch of barnacles have gathered here. Yuck!"

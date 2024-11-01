@@ -348,3 +348,71 @@
 	amount_per_transfer_from_this = 10
 	anchored = TRUE
 	initial_reagent_types = list(/datum/reagent/nutriment/virus_food = 1)
+
+//Barrels
+
+/obj/structure/reagent_dispensers/barrel
+	name = "Barrel"
+	desc = "A dummy barrel."
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "barrel_generic"
+	possible_transfer_amounts = "10;25;50;100"
+	initial_capacity = 2500
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
+	var/datum/reagent/selected_reagent
+
+/obj/structure/reagent_dispensers/barrel/proc/InitializeBarrelReagent() //TD, Fix Reagent Picking Later...
+	var/list/barrelreagents = list(/datum/reagent/slippery_oil = 30, //30 more common, 15 decreasing, 25 a little less frequent, and 5-10 rare.
+								/datum/reagent/oil = 30,
+								/datum/reagent/coolant = 30,
+								/datum/reagent/medicine/amnestics/classa = 15,
+								/datum/reagent/medicine/amnestics/classb = 10,
+								/datum/reagent/medicine/nanoblood = 25,
+								/datum/reagent/medicine/cryogenic/cryoxadone = 25,
+								/datum/reagent/cryptobiolin = 10,
+								/datum/reagent/toxin/denatured = 15,
+								/datum/reagent/colored_hair_dye/chaos = 25,
+								/datum/reagent/acid/sulphuric = 10,
+								/datum/reagent/acid/hydrochloric = 10,
+								/datum/reagent/acid/polytrinic = 5,
+								/datum/reagent/unstable_mutagen = 15,
+								/datum/reagent/advanced_mutation_toxin = 5, //Xenobiology's place in F19 has always been... questionable. Humie --> Slime
+								/datum/reagent/radium = 25,
+								/datum/reagent/nitroglycerin = 5,
+								/datum/reagent/blood = 10, //Science has questionable sources..
+								/datum/reagent/sodiumchloride = 25,
+								/datum/reagent/ethanol = 25
+								)
+	var/reagentpicked = pickweight(barrelreagents)  // Pick a random reagent based on weights
+	selected_reagent = reagentpicked
+	initial_reagent_types = list(selected_reagent = 1)
+
+/obj/structure/reagent_dispensers/barrel/New()
+	. = ..()
+	InitializeBarrelReagent()
+
+/obj/structure/reagent_dispensers/barrel/generic
+	name = "Barrel"
+	desc = "A generic barrel."
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "barrel_generic"
+	possible_transfer_amounts = "10;25;50;100"
+	initial_capacity = 2500
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
+
+//These two hitch off water and fuel tank logic since that's easier then rewriting all of the code, plus barrels aren't all That unique.
+//The notable difference is that the quantities are much smaller.
+
+/obj/structure/reagent_dispensers/watertank/barrel
+	name = "Blue Barrel"
+	desc = "A blue barrel that probably contains water."
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "barrel_water"
+	initial_capacity = 2500
+
+/obj/structure/reagent_dispensers/fueltank/barrel
+	name = "Red Barrel"
+	desc = "A deep red barrel which probably contains welding fuel. Better keep guns away from this..."
+	icon = 'icons/teststructures_small.dmi'
+	icon_state = "barrel_weld"
+	initial_capacity = 2500

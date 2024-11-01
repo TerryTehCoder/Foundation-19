@@ -1365,3 +1365,28 @@ var/list/random_useful_
 	icon = 'icons/obj/drinks.dmi'
 	icon_state = "cola"
 	spawn_object = /obj/item/reagent_containers/food/drinks/cans/cola
+
+/obj/random/shipping_container
+	name = "random shipping container"
+	desc = "This is a random shipping container"
+	icon = 'icons/obj/fluff/containers.dmi'
+	icon_state = "random"
+
+/obj/random/shipping_container/spawn_choices() //We don't really need to weigh these, since they're all functionally the same, just recolors.
+	return list(/obj/structure/shipping_container/generic = 10,
+				/obj/structure/shipping_container/scp/greyengi = 10,
+				/obj/structure/shipping_container/scp/greylogi = 10,
+				/obj/structure/shipping_container/scp/yellowscp = 10,
+				/obj/structure/shipping_container/scp/yellowmanu = 10,
+				/obj/structure/shipping_container/scp/bluemed = 10,
+				/obj/structure/shipping_container/generic/darkblue = 10,
+				/obj/structure/shipping_container/generic/lightblue = 10,
+				/obj/structure/shipping_container/generic/darkgreen = 10,
+				/obj/structure/shipping_container/generic/yellow = 10,
+				/obj/structure/shipping_container/generic/red = 10,
+				/obj/structure/shipping_container/generic/black = 10,
+				/obj/structure/shipping_container/generic/grey = 10,
+				/obj/structure/shipping_container/generic/blue = 10,
+				/obj/structure/shipping_container/generic/altblack = 10,
+				/obj/structure/shipping_container/generic/orange = 10,
+				/obj/structure/shipping_container/generic/darkorange = 10)
