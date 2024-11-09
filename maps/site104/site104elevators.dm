@@ -80,3 +80,22 @@
 		/area/turbolift/site104/logilift5,
 		/area/turbolift/site104/logilift6
 	)
+
+/obj/turbolift_map_holder/decklift
+	name = "Deck Lift"
+	depth = 3
+	lift_size_x = 4
+	lift_size_y = 5
+	door_type = ""
+	wall_type = ""
+	floor_type = /turf/simulated/floor/tiled/dark/small
+
+
+	areas_to_use = list(
+		/area/turbolift/site104/logilift1,
+		/area/turbolift/site104/logilift2,
+		/area/turbolift/site104/logilift3,
+		/area/turbolift/site104/logilift4,
+		/area/turbolift/site104/logilift5,
+		/area/turbolift/site104/logilift6
+	)

@@ -360,3 +360,6 @@
 		/decl/stock_part_preset/radio/receiver/vent_scrubber/shuttle = 1,
 		/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/shuttle = 1
 	)
+
+/obj/machinery/atmospherics/unary/vent_scrubber/wallmount
+	icon_state = "map_scrubber"

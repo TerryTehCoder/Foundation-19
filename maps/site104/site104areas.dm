@@ -55,6 +55,22 @@
 	requires_power = 0
 	dynamic_lighting = 1
 
+/area/turbolift/site104/decklift1
+	name = "Weather Deck"
+	lift_floor_label = "Floor-1"
+	lift_floor_name = "Main Weather Deck"
+	lift_announce_str = "" //Can we have no announcement?
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/turbolift/site104/decklift2
+	name = "Weather Deck"
+	lift_floor_label = "Floor-2"
+	lift_floor_name = "Upper Weather Deck"
+	lift_announce_str = "" //Can we have no announcement?
+	requires_power = 0
+	dynamic_lighting = 1
+
 //Surface Areas
 
 /area/site104

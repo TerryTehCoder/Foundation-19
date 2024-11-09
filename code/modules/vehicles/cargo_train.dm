@@ -381,6 +381,8 @@
 	else
 		anchored = TRUE
 
+//Forklift Stuff, might be better to just write my own logic for this but for now I'm piggying cargo trolleys.i
+
 /obj/vehicle/train/cargo/engine/forklift
 	name = "Logistics Forklift"
 	desc = "A metal divinity from above and a crate lifting monster, they say only those with forklift certification can harness its True Potential."
@@ -389,8 +391,22 @@
 	health = 150
 	maxhealth = 150 //We're a little tougher than the cargo trains, but even titans must fall eventually.
 	move_delay = 1.3 //We're also a little...slower.
-	buckle_pixel_shift = "x=0;y=0;z=7"
 
+//Vehicles don't automatically adjust the buckle pixel shift based on direction, so we have to do it here or you'll be riding the side of the forklift supernaturally..
+//I also don't think I'm using these correctly, TD: Fix
+
+/datum/component/forkliftdir/Initialize()
+	RegisterSignal(parent, COMSIG_ATOM_DIR_CHANGE, PROC_REF(changebuckle))
+
+/datum/component/forkliftdir/proc/changebuckle(datum/source, obj/vehicle/MV)
+	if(MV.dir == NORTH)
+		MV.buckle_pixel_shift = "x=0;y=23;z=7"
+	if(MV.dir == SOUTH)
+		MV.buckle_pixel_shift = "x=0;y=0;z=0"
+	if(MV.dir == EAST)
+		MV.buckle_pixel_shift = "x=3;y=23;z=7"
+	if(MV.dir == WEST)
+		MV.buckle_pixel_shift = "x=33;y=23;z=7"
 
 
 //TD Emag Crush Code

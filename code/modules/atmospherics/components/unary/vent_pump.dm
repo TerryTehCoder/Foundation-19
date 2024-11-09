@@ -557,6 +557,21 @@
 	. = ..()
 	air_contents.volume = ATMOS_DEFAULT_VOLUME_PUMP + 500 //meant to match air injector
 
+//Wall mounted vents and scrubbers - As cursed as my soul
+
+/obj/machinery/atmospherics/unary/vent_pump/wallmount
+	icon_state = "wall_map_vent"
+
+/obj/machinery/atmospherics/unary/vent_pump/wallmount/on
+	icon_state = "wall_map_vent_out"
+
+/obj/machinery/atmospherics/unary/vent_pump/wallmount/siphon
+	pump_direction = 0
+
+/obj/machinery/atmospherics/unary/vent_pump/siphon/on
+	use_power = POWER_USE_IDLE
+	icon_state = "wall_map_vent_in"
+
 #undef DEFAULT_PRESSURE_DELTA
 
 #undef EXTERNAL_PRESSURE_BOUND
