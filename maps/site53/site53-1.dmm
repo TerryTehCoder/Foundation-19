@@ -8258,15 +8258,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/engineering/lowernukeladders)
-"ilt" = (
-/obj/structure/closet/crate/bin{
-	anchored = 1;
-	name = "trash bin"
-	},
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/item/clothing/suit/chef/classic,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
 "ilE" = (
 /turf/simulated/floor/tiled/monotile,
 /area/site53/lhcz/hallway)
@@ -17124,6 +17115,7 @@
 /obj/effect/floor_decal/corner/black/diagonal,
 /obj/structure/table/reinforced,
 /obj/item/storage/box/beakers,
+/obj/item/clothing/suit/chef/classic,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/kitchen)
 "ryK" = (
@@ -20158,13 +20150,6 @@
 /turf/simulated/wall/r_titanium,
 /area/site53/llcz/dclass/luxurysleep)
 "uSp" = (
-/obj/machinery/door/window/brigdoor/northright{
-	name = "CDCZ Kitchen Delivery";
-	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_KITCHEN"))
-	},
-/obj/machinery/door/window/brigdoor/southleft{
-	name = "CDCZ Kitchen Delivery"
-	},
 /obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/dark/small,
 /area/site53/llcz/dclass/kitchen)
@@ -30435,8 +30420,8 @@ fmD
 mHG
 mHG
 mHG
-ilt
-nuj
+mHG
+uSp
 nAJ
 nzF
 srn
@@ -30950,7 +30935,7 @@ wqp
 gXR
 mHG
 ryC
-nuj
+uSp
 nAJ
 nzF
 kXj

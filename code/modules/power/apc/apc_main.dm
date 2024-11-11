@@ -272,7 +272,7 @@
 	name = "Breaker Box"
 	desc = "A breaker-box for the area electrical systems.<br><span class='notice'>Alt + Click to open the lid.</span>"
 	icon = 'icons/teststructures_small.dmi'
-	icon_state = "breaker_closed"
+	icon_state = "breaker_good"
 
 	hasoverlay = FALSE
 	allgoodicon = "breaker_good" //What does the sprite look like when the APC is closed and undamaged?
