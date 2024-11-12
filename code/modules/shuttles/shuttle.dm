@@ -132,11 +132,6 @@
 			while (world.time < arrive_time)
 				if(!fwooshed && (arrive_time - world.time) < 100)
 					fwooshed = 1
-					if(audioalways)
-						playsound(current_location, sound_landing, 100)
-						playsound(destination, sound_landing, 100)
-					else
-						playsound(destination, sound_landing, 100)
 					if (!istype(destination.base_area, /area/space))
 						var/area/A = get_area(destination)
 
