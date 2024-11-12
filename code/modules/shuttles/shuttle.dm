@@ -129,6 +129,7 @@
 		moving_status = SHUTTLE_INTRANSIT
 		if(attempt_move(interim))
 			var/fwooshed = 0
+			playsound(destination, sound_landing, 100)
 			while (world.time < arrive_time)
 				if(!fwooshed && (arrive_time - world.time) < 100)
 					fwooshed = 1
