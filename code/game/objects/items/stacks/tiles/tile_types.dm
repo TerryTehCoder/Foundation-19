@@ -214,6 +214,24 @@
 	icon_state = "tile_white"
 	matter = list(MATERIAL_PLASTIC = 450)
 
+/obj/item/stack/tile/mono/keter
+	name = "keter mono tile"
+	singular_name = "keter mono tile"
+	icon_state = "fr_tile"
+	matter = list(MATERIAL_STEEL = 450)
+
+/obj/item/stack/tile/mono/safe
+	name = "safe mono tile"
+	singular_name = "safe mono tile"
+	icon_state = "fr_tile"
+	matter = list(MATERIAL_STEEL = 450)
+
+/obj/item/stack/tile/mono/euclid
+	name = "euclid mono tile"
+	singular_name = "euclid mono tile"
+	icon_state = "fr_tile"
+	matter = list(MATERIAL_STEEL = 450)
+
 /obj/item/stack/tile/grid
 	name = "grey grid tile"
 	singular_name = "grey grid tile"

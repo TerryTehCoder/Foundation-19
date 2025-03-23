@@ -135,12 +135,15 @@
 	layer = CATWALK_LAYER
 	var/plating_type = /decl/flooring/tiling/mono
 
+
+
 /obj/effect/catwalk_plated/Initialize(mapload)
 	. = ..()
 	var/auto_activate = mapload || (GAME_STATE < RUNLEVEL_GAME)
 	if(auto_activate)
 		activate()
 		return INITIALIZE_HINT_QDEL
+
 
 /obj/effect/catwalk_plated/CanPass()
 	return 0
@@ -164,10 +167,61 @@
 		C.plated_tile += new plating_type
 		C.name = "plated catwalk"
 		C.update_icon()
+
 	activated = 1
 	for(var/turf/T in orange(src, 1))
 		for(var/obj/effect/wallframe_spawn/other in T)
 			if(!other.activated) other.activate()
+
+//I have no idea how the original author got the dark/white plate coverings but if you're wondering how I did it.. I sacrificed a friday night.
+/proc/generate_colored_catwalks()
+	var/icon/base_icon = icon('icons/obj/catwalks.dmi', "catwalk")
+	if (!base_icon)
+		warning("Base icon for 'catwalk_plated' not found")
+		return
+
+	var/icon/plated_icon = icon('icons/obj/catwalks.dmi', "plated")
+	if (!plated_icon)
+		warning("Plated icon not found!")
+		return
+
+	// Define the list of colors with associated names, you can amend this list if you want to make more to iterate through.
+	var/list/colors = list(
+		"keter" = COLOR_KETER_RED,
+		"safe" = COLOR_SAFE_GREEN,
+		"euclid" = COLOR_EUCLID_YELLOW
+	)
+
+	// Loop through each color and generate a colored icon state
+	for (var/name in colors)
+		var/color = colors[name]
+
+		// Create a new icon for the "plated" icon (In order to add color)
+		var/icon/colored_plated_icon = new /icon(plated_icon)
+
+		// Applying the color itself
+		colored_plated_icon.Blend(color, ICON_MULTIPLY)
+
+		//Establishes the path designated by the user
+		var/cache_path = input("Enter the path where you want to save the catwalk DMI files:")
+
+		if (!cache_path)
+			warning("No directory specified. Cancelling")
+			return
+
+		//What we're saving it under
+		var/file_path = "[cache_path]catwalks_[name].dmi"
+
+		//Copying it over to the directory, hopefully in tact!
+		fcopy(colored_plated_icon, file_path)
+
+
+/client/verb/generate_catwalk_icons()
+	set name = "Generate Catwalk Icons"
+	set desc = "Generates colored catwalk icons and saves them to the catwalks.dmi"
+	set category = "Admin"
+
+	generate_colored_catwalks()
 
 /obj/effect/catwalk_plated/dark
 	icon_state = "catwalk_plateddark"
@@ -176,3 +230,17 @@
 /obj/effect/catwalk_plated/white
 	icon_state = "catwalk_platedwhite"
 	plating_type = /decl/flooring/tiling/mono/white
+
+//Coloration, like the above two, is handeled by the plating type, different icons have visually different details on the plating.
+
+/obj/effect/catwalk_plated/keter
+	icon_state = "catwalk_platedketer"
+	plating_type = /decl/flooring/tiling/mono/keter
+
+/obj/effect/catwalk_plated/safe
+	icon_state = "catwalk_platedsafe"
+	plating_type = /decl/flooring/tiling/mono/safe
+
+/obj/effect/catwalk_plated/euclid
+	icon_state = "catwalk_platedeuclid"
+	plating_type = /decl/flooring/tiling/mono/euclid

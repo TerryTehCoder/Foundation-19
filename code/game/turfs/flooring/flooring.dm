@@ -233,6 +233,21 @@
 	color = COLOR_OFF_WHITE
 	build_type = /obj/item/stack/tile/mono/white
 
+/decl/flooring/tiling/mono/keter
+	icon_base = "monotileketer"
+	color = COLOR_KETER_RED
+	build_type = /obj/item/stack/tile/mono/keter
+
+/decl/flooring/tiling/mono/safe
+	icon_base = "monotilesafe"
+	color = COLOR_SAFE_GREEN
+	build_type = /obj/item/stack/tile/mono/safe
+
+/decl/flooring/tiling/mono/euclid
+	icon_base = "monotileeuclid"
+	color = COLOR_EUCLID_YELLOW
+	build_type = /obj/item/stack/tile/mono/euclid
+
 /decl/flooring/tiling/white
 	icon_base = "tiled_white"
 	desc = "How sterile."
