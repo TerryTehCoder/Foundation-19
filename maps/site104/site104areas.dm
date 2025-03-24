@@ -83,7 +83,7 @@
 	ambience = list('sounds/ambience/Site104/BoatHorn.ogg', 'sounds/ambience/Site104/Seagulls.ogg')
 
 /area/site104/surface/opendeck
-	name = "Open Deck"
+	name = "Weather Deck"
 	sound_env = HANGAR
 	forced_ambience = list('sounds/ambience/Site104/DeckAmbience.ogg') //Ahh, the sound of the ocean waves and the creaking metal beneath our feet...
 

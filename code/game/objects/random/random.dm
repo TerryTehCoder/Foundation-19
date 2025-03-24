@@ -1142,6 +1142,52 @@ var/list/multi_point_spawns
 	id = "Maint Skeleton"
 	item_path = /obj/structure/skele_stand/maint
 
+/obj/random_multi/single_item/utilitycart
+	name = "Multi Point - Utility Cart"
+	id = "Utility Cart"
+	item_path = /obj/structure/closet/crate/utilitycart
+
+//Random Utility Objects; Janitor Carts, Buckets, Utility Carts, Roller Beds, etc.
+//Adjust ID's as needed for multiple spawns, I.E: "Prefilled Utility Cart #1, #2, #3, etc"
+
+/obj/random_multi/single_item/utilitycart/prefilled
+	name = "Multi Point - Prefilled Utility Cart"
+	id = "Prefilled Utility Cart"
+	item_path = /obj/structure/closet/crate/utilitycart/prefilled
+
+/obj/random_multi/single_item/janicart
+	name = "Multi Point - Janicart"
+	id = "Janicart"
+	item_path = /obj/structure/janitorialcart
+
+/obj/random_multi/single_item/mopbucket
+	name = "Multi Point - Mop Bucket"
+	id = "Mop Bucket"
+	item_path = /obj/structure/mopbucket
+
+/obj/random_multi/single_item/wetfloorsign
+	name = "Multi Point - Wet Floor Sign"
+	id = "Wet Floor Sign"
+	item_path = /obj/item/caution
+
+
+/obj/random_multi/single_item/rollerbed
+	name = "Multi Point - Roller Bed"
+	id = "Roller Bed"
+	item_path = /obj/structure/bed/roller
+
+//Random Misc Objects; Crowbars,
+
+/obj/random_multi/single_item/crowbar
+	name = "Multi Point - Crowbar"
+	id = "Crowbar"
+	item_path = /obj/item/crowbar
+
+/obj/random_multi/single_item/stool
+	name = "Multi Point - Stool"
+	id = "Stool"
+	item_path = /obj/item/stool
+
 var/list/random_junk_
 var/list/random_useful_
 /proc/get_random_useful_type()

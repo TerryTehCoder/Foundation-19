@@ -102,6 +102,26 @@
 	icon_opened = "trashcartopen"
 	icon_closed = "trashcart"
 
+/obj/structure/closet/crate/utilitycart
+	name = "Utility Cart"
+	desc = "A heavy, metal utility cart with wheels."
+	icon_state = "trashcart" //Maybe at some point I will retexture this to make it visually distinct from Trash Carts, but for now it works fine.
+	icon_opened = "trashcartopen"
+	icon_closed = "trashcart"
+
+/obj/structure/closet/crate/utilitycart/prefilled //Already has three random tools inside
+	name = "Utility Cart"
+	desc = "A heavy, metal utility cart with wheels."
+	icon_state = "trashcart"
+	icon_opened = "trashcartopen"
+	icon_closed = "trashcart"
+
+/obj/structure/closet/crate/utilitycart/prefilled/WillContain()
+	return list(
+		/obj/random/tool = 3,
+		/obj/item/stack/cable_coil/random
+		)
+
 /obj/structure/closet/crate/medical
 	name = "medical crate"
 	desc = "A medical crate."
