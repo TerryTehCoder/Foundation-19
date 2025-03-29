@@ -236,7 +236,7 @@
 //
 
 /datum/shuttle/autodock/ferry/supply/drone
-	name = "Supply Truck"
+	name = "Supply Drone"
 	location = 1
 	warmup_time = 10
 	shuttle_area = /area/supply/dock

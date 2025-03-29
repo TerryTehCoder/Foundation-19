@@ -31,12 +31,6 @@
 /datum/movement_handler/delay/MayMove()
 	return world.time >= next_move ? MOVEMENT_PROCEED : MOVEMENT_STOP
 
-/datum/movement_handler/delay/proc/SetDelay(delay)
-	next_move = max(next_move, world.time + delay)
-
-/datum/movement_handler/delay/proc/AddDelay(delay)
-	next_move += max(0, delay)
-
 // Relay self
 /datum/movement_handler/move_relay_self/DoMove(direction, mover)
 	host.relaymove(mover, direction)

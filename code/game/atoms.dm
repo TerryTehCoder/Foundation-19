@@ -580,8 +580,7 @@
 /atom/proc/set_color(color)
 	src.color = color
 
-/atom/proc/get_cell() as /obj/item/cell
-	RETURN_TYPE(/obj/item/cell)
+/atom/proc/get_cell()
 	return
 
 /atom/proc/slam_into(mob/living/L)

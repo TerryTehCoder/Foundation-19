@@ -47,7 +47,7 @@
 	animate(src, pixel_z = 0, time = 3)
 	return ..()
 
-/mob/living/simple_animal/hostile/infestation/floatfly/movement_delay(decl/move_intent/using_intent = move_intent)
+/mob/living/simple_animal/hostile/infestation/floatfly/movement_delay()
 	. = ..()
 	// Faster while flying
 	if(!density)

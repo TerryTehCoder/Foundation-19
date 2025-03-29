@@ -302,7 +302,7 @@
 	if(T && (isturf(loc) || isturf(src)) && user.TurfAdjacent(T))
 		user.listed_turf = T
 		user.client.stat_panel.send_message("create_listedturf", T.name)
-	return TRUE
+	return 1
 
 /mob/proc/TurfAdjacent(turf/T)
 	return T.AdjacentQuick(src)

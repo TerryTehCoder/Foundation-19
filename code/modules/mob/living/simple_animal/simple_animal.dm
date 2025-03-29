@@ -374,7 +374,7 @@
 /mob/living/simple_animal/proc/PlayMovementSound()
 	playsound(src, movement_sound, 50, 1)
 
-/mob/living/simple_animal/movement_delay(decl/move_intent/using_intent = move_intent)
+/mob/living/simple_animal/movement_delay()
 	. = movement_cooldown
 
 	// Turf related slowdown

@@ -21,37 +21,24 @@
 /////////// //Ported Straight from TG. I am not sorry. - BloodyMan  //YOU SHOULD BE
 //ROLLING//
 ///////////
-/obj/item/rolling_paper
+/obj/item/paper/cig
 	name = "rolling paper"
 	desc = "A thin piece of paper used to make smokeables."
-	gender = NEUTER
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig_paper"
-	randpixel = 8
-	throwforce = 0
-	throw_range = 1
-	throw_speed = 1
 	w_class = ITEM_SIZE_TINY
-	layer = ABOVE_OBJ_LAYER
-	attack_verb = list("bapped")
+	is_memo = TRUE
 
-/obj/item/rolling_paper/fancy
+/obj/item/paper/cig/fancy
 	name = "\improper Trident rolling paper"
 	desc = "A thin piece of trident branded paper used to make fine smokeables."
 	icon_state = "cig_paperf"
 
-/obj/item/cigarette_filter
+/obj/item/paper/cig/filter
 	name = "cigarette filter"
 	desc = "A small nub like filter for cigarettes."
-	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig_filter"
-	randpixel = 8
-	throwforce = 0
-	throw_range = 1
-	throw_speed = 1
 	w_class = ITEM_SIZE_TINY
-	layer = ABOVE_OBJ_LAYER
-	attack_verb = list("bapped")
 
 //tobacco sold seperately if you're too snobby to grow it yourself.
 /obj/item/reagent_containers/food/snacks/grown/dried_tobacco
@@ -70,7 +57,7 @@
 	plantname = "finetobacco"
 
 /obj/item/clothing/mask/smokable/cigarette/rolled/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/cigarette_filter))
+	if(istype(I, /obj/item/paper/cig/filter))
 		if(filter)
 			to_chat(user, SPAN_WARNING("[src] already has a filter!"))
 			return
@@ -88,7 +75,7 @@
 	..()
 
 /obj/item/reagent_containers/food/snacks/grown/attackby(obj/item/I, mob/user)
-	if(is_type_in_list(I, list(/obj/item/rolling_paper/, /obj/item/paper/, /obj/item/teleportation_scroll)))
+	if(is_type_in_list(I, list(/obj/item/paper/cig/, /obj/item/paper/, /obj/item/teleportation_scroll)))
 		if(!dry)
 			to_chat(user, SPAN_WARNING("You need to dry [src] first!"))
 			return

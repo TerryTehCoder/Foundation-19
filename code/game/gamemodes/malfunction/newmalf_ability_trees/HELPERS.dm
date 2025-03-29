@@ -207,9 +207,7 @@
 		message = text("used malf ability/function: [ability_name].")
 	admin_attack_log(A, null, message, null, message)
 
-/// Returns a list of all AIs who are intercepting communications
 /proc/check_for_interception()
-	. = list()
 	for(var/mob/living/silicon/ai/A in SSmobs.mob_list)
 		if(A.intercepts_communication)
-			. += A
+			return A

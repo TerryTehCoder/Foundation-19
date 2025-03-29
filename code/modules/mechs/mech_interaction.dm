@@ -44,8 +44,9 @@
 		//If this happens something broke tbh
 		user.RemoveClickHandler(src)
 		return
-
-	return E.ClickOn(A, params, user)
+	if(E.hatch_closed)
+		return E.ClickOn(A, params, user)
+	else return ..()
 
 /datum/click_handler/default/mech/OnDblClick(atom/A, params)
 	OnClick(A, params)
@@ -81,8 +82,6 @@
 				selected_system.CtrlClick(user)
 				setClickCooldown(3)
 			return
-	if(modifiers["alt"])
-		return user.AltClickOn(A)
 
 	if(!(user in pilots) && user != src)
 		return
@@ -103,10 +102,10 @@
 		to_chat(user, SPAN_WARNING("Your motivators are damaged! You can't use your manipulators!"))
 		setClickCooldown(15)
 		return
-	if(selected_system && !(selected_system.equipment_flags & ME_ARM_INDEPENDENT))
-		if(!get_cell(FALSE, ME_ANY_POWER)?.checked_use(arms.power_use * CELLRATE))
-			to_chat(user, power == MECH_POWER_ON ? SPAN_WARNING("Error: Power levels insufficient.") :  SPAN_WARNING("\The [src] is powered off."))
-			return
+
+	if(!get_cell()?.checked_use(arms.power_use * CELLRATE))
+		to_chat(user, power == MECH_POWER_ON ? SPAN_WARNING("Error: Power levels insufficient.") :  SPAN_WARNING("\The [src] is powered off."))
+		return
 
 	// User is not necessarily the exosuit, or the same person, so update intent.
 	if(user != src)
@@ -127,12 +126,6 @@
 		failed = TRUE
 
 	if(!failed)
-		if(istype(A, /obj/item/mech_equipment))
-			var/obj/item/mech_equipment/cast = A
-			if(cast.equipment_flags & ME_NOT_SELECTABLE)
-				setClickCooldown(5)
-				cast.attack_self(user)
-				return
 		if(selected_system)
 			if(selected_system == A)
 				selected_system.attack_self(user)
@@ -258,9 +251,6 @@
 	LAZYOR(user.additional_vision_handlers, src)
 	update_pilots()
 	user.PushClickHandler(/datum/click_handler/default/mech)
-	var/mob/living/carbon/human/man = user
-	man.reset_view(null)
-	man.check_fov()
 	return 1
 
 /mob/living/exosuit/proc/sync_access()
@@ -286,7 +276,6 @@
 			to_chat(user, SPAN_NOTICE("You climb out of \the [src]."))
 
 	user.RemoveClickHandler(/datum/click_handler/default/mech)
-	user.clear_alert(ALERT_CHARGE)
 	user.dropInto(loc)
 	LAZYREMOVE(user.additional_vision_handlers, src)
 	if(user.client)
@@ -297,8 +286,6 @@
 		LAZYREMOVE(pilots, user)
 		UNSETEMPTY(pilots)
 		update_pilots()
-	var/mob/living/carbon/human/man = user
-	man.check_fov()
 	return 1
 
 /mob/living/exosuit/attackby(obj/item/thing, mob/user)
@@ -319,7 +306,6 @@
 		var/to_place = input("Where would you like to install it?") as null|anything in (realThing.restricted_hardpoints & free_hardpoints)
 		if(!to_place)
 			to_chat(user, SPAN_WARNING("There is no room to install \the [thing]."))
-			return
 		if(install_system(thing, to_place, user))
 			return
 		to_chat(user, SPAN_WARNING("\The [thing] could not be installed in that hardpoint."))
@@ -340,16 +326,6 @@
 
 	else
 		if(user.a_intent != I_HURT)
-			if(istype(thing, /obj/item/reagent_containers))
-				var/obj/item/reagent_containers/W = thing
-				if(!(HARDPOINT_POWER in hardpoints))
-					to_chat(user, SPAN_WARNING("There is no engine to try refueling!"))
-					return
-				if(!istype(hardpoints[HARDPOINT_POWER], /obj/item/mech_equipment/engine ))
-					to_chat(user, SPAN_WARNING("There is no engine to try refueling!"))
-					return
-				W.standard_pour_into(user, hardpoints[HARDPOINT_POWER])
-				return
 			if(isMultitool(thing))
 				if(hardpoints_locked)
 					to_chat(user, SPAN_WARNING("Hardpoint system access is disabled."))
@@ -402,47 +378,23 @@
 				return
 			else if(isScrewdriver(thing))
 				if(!maintenance_protocols)
-					to_chat(user, SPAN_WARNING("The power supply compartment remains locked while maintenance protocols are disabled."))
+					to_chat(user, SPAN_WARNING("The cell compartment remains locked while maintenance protocols are disabled."))
 					return
-				var/chosen_hardpoint
-				if(hardpoints[HARDPOINT_POWER] && hardpoints[HARDPOINT_BACKUP_POWER])
-					chosen_hardpoint = input(user, "Choose power hardpoint to interact with", "MechEngineer3000", HARDPOINT_POWER) as anything in list(HARDPOINT_POWER, HARDPOINT_BACKUP_POWER)
-				else if(hardpoints[HARDPOINT_POWER])
-					chosen_hardpoint = HARDPOINT_POWER
-				else if(hardpoints[HARDPOINT_BACKUP_POWER])
-					chosen_hardpoint = HARDPOINT_BACKUP_POWER
-
-				if(!chosen_hardpoint)
-					to_chat(user, SPAN_WARNING("There is nothing to remove with the use of a screwdriver!"))
-					return
-				if(!hardpoints[chosen_hardpoint])
-					to_chat(user, SPAN_WARNING("There is nothing to remove with the use of a screwdriver!"))
-					return
-
-				if(!body)
-					to_chat(user, SPAN_WARNING("There is no power provider here for you to remove!"))
+				if(!body || !body.cell)
+					to_chat(user, SPAN_WARNING("There is no cell here for you to remove!"))
 					return
 				var/delay = 2.5 SECONDS * user.skill_delay_mult(SKILL_DEVICES)
-				if(!do_after(user, delay, bonus_percentage = 25) || !maintenance_protocols || !body || !hardpoints[chosen_hardpoint])
+				if(!do_after(user, delay, bonus_percentage = 25) || !maintenance_protocols || !body || !body.cell)
 					return
 
-				var/atom/movable/power_provider = hardpoints[chosen_hardpoint]
-				if(istype(power_provider, /obj/item/mech_equipment/power_cell))
-					var/obj/item/mech_equipment/power_cell/cast = power_provider
-					remove_system(chosen_hardpoint, null, TRUE)
-					power_provider = cast.internal_cell
-					power_provider.forceMove(get_turf(src))
-					cast.internal_cell = null
-					qdel(cast)
-				else
-					remove_system(chosen_hardpoint, null, TRUE)
-				user.put_in_hands(power_provider)
-				to_chat(user, SPAN_NOTICE("You remove \the [power_provider] from \the [src]."))
+				user.put_in_hands(body.cell)
+				to_chat(user, SPAN_NOTICE("You remove \the [body.cell] from \the [src]."))
 				playsound(user.loc, 'sounds/items/Crowbar.ogg', 50, 1)
-				visible_message(SPAN_NOTICE("\The [user] pries out \the [power_provider] using \the [thing]."))
+				visible_message(SPAN_NOTICE("\The [user] pries out \the [body.cell] using \the [thing]."))
 				power = MECH_POWER_OFF
+				hud_power_control.queue_icon_update()
+				body.cell = null
 				return
-
 			else if(isCrowbar(thing))
 				if(!hatch_locked)
 					to_chat(user, SPAN_NOTICE("The cockpit isn't locked. There is no need for this."))
@@ -464,18 +416,18 @@
 				return
 			else if(istype(thing, /obj/item/cell))
 				if(!maintenance_protocols)
-					to_chat(user, SPAN_WARNING("The power supply compartment remains locked while maintenance protocols are disabled."))
+					to_chat(user, SPAN_WARNING("The cell compartment remains locked while maintenance protocols are disabled."))
 					return
-				if(hardpoints[HARDPOINT_POWER] || !body)
-					to_chat(user, SPAN_WARNING("There is already a power provider installed in there!"))
+				if(!body || body.cell)
+					to_chat(user, SPAN_WARNING("There is already a cell in there!"))
 					return
+
 				if(user.unEquip(thing))
-					var/obj/item/mech_equipment/power_cell/holder = new(null)
-					holder.set_power_cell(thing)
-					install_system(holder, HARDPOINT_POWER, null)
-					to_chat(user, SPAN_NOTICE("You install \the [thing] into \the [src]."))
+					thing.forceMove(body)
+					body.cell = thing
+					to_chat(user, SPAN_NOTICE("You install \the [body.cell] into \the [src]."))
 					playsound(user.loc, 'sounds/items/Screwdriver.ogg', 50, 1)
-					visible_message(SPAN_NOTICE("\The [user] installs \the [thing] into \the [src]."))
+					visible_message(SPAN_NOTICE("\The [user] installs \the [body.cell] into \the [src]."))
 				return
 			else if(istype(thing, /obj/item/device/robotanalyzer))
 				to_chat(user, SPAN_NOTICE("Diagnostic Report for \the [src]:"))

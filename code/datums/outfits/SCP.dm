@@ -33,7 +33,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat
 	shoes = /obj/item/clothing/shoes/swat
 	l_pocket = /obj/item/melee/telebaton
-	r_pocket = /obj/item/material/knife/combat
+	r_pocket = /obj/item/material/hatchet/tacknife
 	back = /obj/item/storage/backpack/satchel/pocketbook
 	backpack_contents = /obj/item/gun/energy/taser
 	flags = OUTFIT_RESET_EQUIPMENT

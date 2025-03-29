@@ -19,6 +19,3 @@
 // JSON text files found in the /strings folder
 /// File location for eigenstasium lines
 #define EIGENSTASIUM_FILE "eigenstasium.json"
-
-/// Max fields for sheets of paper
-#define MAX_PAPER_FIELDS 50
