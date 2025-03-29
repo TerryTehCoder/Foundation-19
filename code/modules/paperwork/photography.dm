@@ -306,3 +306,11 @@ var/global/photo_count = 0
 		p.id = id
 
 	return p
+
+
+
+/obj/item/photo/constructioncrew
+	img = 'icons/misc/ConstructionCrew.png'
+	desc = "A picture of the Rigs original skeleton construction crew, they seem tired. The back of the photo is signed Chief Engineer L."
+	photo_size = 5
+

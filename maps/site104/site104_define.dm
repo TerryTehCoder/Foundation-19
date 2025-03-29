@@ -7,7 +7,6 @@
 	contact_levels = list(1,2,3,4,5,6,7)
 	player_levels = list(1,2,3,4,5,6,7)
 	sealed_levels = list(1,2,3,4,5,6,7) //No you cannot teleport into another section of the ocean... not right now anyway.
-	admin_levels = list(8,9)
 	empty_levels = list()
 	base_turf_by_z = list(
 		"1" = /turf/simulated/floor/beach/water/ocean,
@@ -35,7 +34,7 @@
 	company_short = "Foundation"
 
 	map_admin_faxes = list(
-		"Foundation Central Office",
+		"Foundation Marine Overwatch",
 		"UIU Central Office",
 		"GOC Central Office",
 		"Horizon Initiative Central Office ",
@@ -53,7 +52,7 @@
 	emergency_shuttle_called_message = "An emergency evacuation has been ordered for this facility. All authorized evacuees must proceed to the outbound Ship-Depo within %ETA%."
 	emergency_shuttle_recall_message = "The emergency evacuation has been cancelled. Return to your post."
 
-	evac_controller_type = /datum/evacuation_controller/shuttle //The evacuation controller that the map uses, this MUST be defined else the train will not function.
+	evac_controller_type = /datum/evacuation_controller/shuttle //The evacuation controller that the map uses, this MUST be defined else the evac transport will not function.
 
 	default_law_type = /datum/ai_laws/foundation
 	use_overmap = 0

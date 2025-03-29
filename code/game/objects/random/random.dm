@@ -1176,12 +1176,24 @@ var/list/multi_point_spawns
 	id = "Roller Bed"
 	item_path = /obj/structure/bed/roller
 
-//Random Misc Objects; Crowbars,
+//Random Misc Objects; Crowbars, airlock braces, airlock jacks.
 
 /obj/random_multi/single_item/crowbar
 	name = "Multi Point - Crowbar"
 	id = "Crowbar"
 	item_path = /obj/item/crowbar
+
+/obj/random_multi/single_item/bracejack
+	name = "Multi Point - Airlock Jack"
+	id = "Airlock Jack"
+	item_path = /obj/item/crowbar/brace_jack
+
+/obj/random_multi/single_item/airlockbrace
+	name = "Multi Point - Airlock Brace"
+	id = "Airlock Brace"
+	item_path = /obj/item/airlock_brace
+
+//Random Structures; Stools, pews, tables,
 
 /obj/random_multi/single_item/stool
 	name = "Multi Point - Stool"
