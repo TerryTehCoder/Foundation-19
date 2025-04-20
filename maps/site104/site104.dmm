@@ -8604,7 +8604,7 @@
 	},
 /obj/structure/sign/warning/detailed{
 	pixel_y = 32;
-	desc = "This sign looks battered with age, as if threatening to peel off just by your gazing at it." ";
+	desc = "This sign looks battered with age, it feels like it might peel off if you so much as look at it for too long.";
 	name = "\improper Research Administrative Offices";
 	layer = 3.07
 	},
@@ -52457,7 +52457,7 @@
 	info = "See if the laundry slime gets drunk if we feed it leftover ethanol drums."
 	},
 /obj/item/paper/sticky{
-	info = "Test anomalous corrosion resistance for 513 by welding it to the reactor exhaust vent. Good real-world simulation. [The bottom says: (No, absolutely not) in red ink.]"
+	info = "Test anomalous corrosion resistance for 513 by welding it to the reactor exhaust vent. Good real-world simulation. The bottom says: (No, absolutely not) in red ink."
 	},
 /obj/item/paper/sticky{
 	info = "Try merging two incompatible SCP artifacts in the burn-lab. Worst case, we have a new one. (The bottom says: This is not how classification works..)"
