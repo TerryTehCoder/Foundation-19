@@ -1170,11 +1170,15 @@ var/list/multi_point_spawns
 	id = "Wet Floor Sign"
 	item_path = /obj/item/caution
 
-
 /obj/random_multi/single_item/rollerbed
 	name = "Multi Point - Roller Bed"
 	id = "Roller Bed"
 	item_path = /obj/structure/bed/roller
+
+/obj/random_multi/single_item/scrubber
+	name = "Multi Point - Scrubber"
+	id = "Scrubber"
+	item_path = /obj/machinery/portable_atmospherics/powered/scrubber
 
 //Random Misc Objects; Crowbars, airlock braces, airlock jacks.
 
