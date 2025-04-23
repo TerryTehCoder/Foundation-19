@@ -80,7 +80,7 @@
 	name = "Open Air"
 	requires_power = 0
 	dynamic_lighting = 1
-	ambience = list('sounds/ambience/Site104/BoatHorn.ogg', 'sounds/ambience/Site104/Seagulls.ogg')
+	ambience = list('sounds/ambience/Site104/BoatHorn.ogg', 'sounds/ambience/Site104/Wildlife/Seagulls1.ogg', 'sounds/ambience/Site104/Wildlife/Seagulls2.ogg')
 
 /area/site104/surface/opendeck
 	name = "Weather Deck"
