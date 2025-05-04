@@ -372,9 +372,3 @@
 	icon_opened = "woodencrate_o"
 	icon_closed = "woodencrate_c"
 
-/obj/structure/closet/crate/desk //We have interior contents so it's easier to just use crate code.
-	name = "Metal Desk"
-	icon = 'icons/teststructures_small.dmi'
-	icon_state = "metaldesk_c"
-	icon_opened = "metaldesk_o"
-	icon_closed = "metaldesk_c"
